@@ -457,3 +457,296 @@ Rendering template within layouts/posts
 Rendering posts/show
   [4;36;1mComment Load (0.7ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 1) [0m
 Completed in 20ms (View: 8, DB: 2) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20091031011937)
+Migrating to CreateComments (20091031014231)
+Migrating to CreateTags (20091031015034)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (16.6ms)[0m   [0;1mCREATE TABLE "tags" ("id" serial primary key, "name" character varying(255), "post_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091031015034')[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-30 18:51:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.7ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 1) [0m
+Completed in 20ms (View: 8, DB: 2) | 200 OK [http://localhost/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-10-30 18:52:02) [GET]
+  Parameters: {"post_id"=>"1", "id"=>"1"}
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mComment Load (0.6ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 1 AND ("comments".post_id = 1)) [0m
+Rendering comments/show
+Completed in 19ms (View: 3, DB: 2) | 200 OK [http://localhost/posts/1/comments/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-10-30 18:52:04) [GET]
+  Parameters: {"post_id"=>"1"}
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering comments/index
+  [4;36;1mComment Load (0.7ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 1) [0m
+Completed in 22ms (View: 7, DB: 2) | 200 OK [http://localhost/posts/1/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-30 18:52:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.7ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 1) [0m
+Completed in 21ms (View: 8, DB: 2) | 200 OK [http://localhost/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-30 18:52:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.7ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 1) [0m
+Completed in 20ms (View: 8, DB: 2) | 200 OK [http://localhost/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 18:52:14) [GET]
+
+ActionController::RoutingError (No route matches "/tags/1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-30 18:52:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.7ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 1) [0m
+Completed in 20ms (View: 8, DB: 2) | 200 OK [http://localhost/posts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-30 18:52:24) [GET]
+  [4;35;1mPost Load (2.1ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 17ms (View: 10, DB: 2) | 200 OK [http://localhost/posts/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-10-30 18:52:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.9ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;35;1mSQL (29.1ms)[0m   [0mSELECT count(*) AS count_all FROM "tags" WHERE ("tags".post_id = 1) [0m
+Rendered posts/_form (43.8ms)
+Completed in 61ms (View: 21, DB: 30) | 200 OK [http://localhost/posts/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#update (for 127.0.0.1 at 2009-10-30 18:52:36) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"9mnPtudTho53UWLopHVQmQxl9CPG0mxWTP1g2XCNpEM=", "post"=>{"tags_attributes"=>{"0"=>{"name"=>"USC, notre dame"}}, "name"=>"Irish Optimist", "title"=>"USC game", "content"=>"Dear Optimists,\r\n\r\nI take many more positives from this than negatives.   \r\n\r\nMaybe Brad can comment about the atmosphere at the game, but it looked like a wild place to be.  Was 1 xp and :01 from being the win of the decade the comeback of the decade.  Terrible loss, but unbelievably exciting game.  I am crushed.  We should have won that game.  Lost my voice again.\r\n\r\nThat being said, this team should win 10 games.  There is *no doubt*.  Nobody on their schedule should be within 1 touchdown of the Irish the rest of the year.  I think we won the many of those elite recruits.  \r\n\r\nCritiques:\r\n- the last series, there could have been 25 seconds left with 1 timeout, second and goal at the 8 (even without the penalty).  as we discussed in Parker's living room, that would have opened more options for passes over middle, run game, etc.  They *should* have scored in that last series (we were calling for a timeout with 25, 24, 23... seconds left... loudly... at the time)\r\n- I question the play call \"high low\" whatever all that bullshit, in the last :01.  In 1-on-1 coverage, i throw the ball to Rudolph there every time.  texted it before the play and we yelled it out loud sitting next to Nephew and Parker.  EVERY. SINGLE. TIME.  EVERYTIME.  Get it to Rudolph.  He has cf mitts on both hands, he's a gamer, he's a playmaker. 1 on 1 coverage outside to him, lob it to the corner and take your chances.  He caught the one 2 plays prior, with a knee out of bounds.  Duval would have been my 5th choice after Rudolph, Tate, Parris, Hughes out of backfield.  My two cents.  It didn't look that open to me anyway, even if he hadn't slipped.  You put Kamara in a situation he is not ready for, not used to, etc after having a whopping FIVE catches this year before this game.  effing ridiculous, frustrates me.  Get it to Rudolph.\r\n- the Tenuta sell-out to stop the run on 3rd down is WAY TOO SUICIDAL.  This is not the goal line, it's the 40 yard line.  How can the tight end go for 50 yards on a 3rd and 1?  It's inexcusable.  It has happened a few times.  imo he shoulders more blame than anyone on the staff for the 2 losses.  He's nuts, this guy.  They do not have the personnel to run these over-aggressive schemes.  Let Barkley make a mistake.  (aside on Barkley: that guy sucks.  In my honest opinion, he has the arm of a woman, lobs the ball to these monsters at wideout and they make plays.  He is not a very good quarterback.  Maybe he is injured, but he has no zip, no accuracy, and all day to throw  I look forward to seeing who USC plays in a bowl game.)\r\n- Clausen looked rusty and rattled in the first half.  He did not move well in the pocket in the first half.  The line performed pretty well in the first half, but Clausen didn't help them out much.  He righted the ship in the 2nd half.\r\n\r\nPositives:\r\n- the heart and guts by this team is remarkable.  They fight to win every play, and they believe.  There is no doubt they can play with anyone.\r\n- Golden Tate is an absolute ManChild.  He is a man.  Amongst boys.  Including Taylor Mays.  He makes plays.  Gimme the ball.  He scored that TD in Taylor Mays' face not once, but 2x.  He took Mays' best shot on the crossing route and Mays got the worst of it.  He caught that perfect long pass in double coverage and held on.  He caught a first down in the 4th quarter and held the ball out in an almost taunting manner to say \"ya see this, you are not getting it.\".  This guy has the skills, athleticism, and attitude of an absolute champion.  Strength and Honor.  Maximus.\r\n- Robby Parris, you have emerged.  The big catches today, including the unbelievable catch on 4th and 10 in that traffic.  A vicious hit by Mays (he should be suspended for that hit, a pure cheap shot, blow to the head to a guy on the ground.). I hope he is not injured by that cheap head shot by Mays on 4th down.  Mays is an athletic guy, but a head hunter. Parris is sure handed, smart player, finds holes in zones.  A nice complement in Floyd's absence.\r\n- Clausen is still the best QB in the country.  2nd half looked great.  The long pass to Tate was perfect.  Many other great throws in traffic in the second half.  Many smart decisions to check it down, take the profit, throw it OB, not throw a pick.  Big numbers in the second half against the best defense in the country.\r\n- Manti Te'o makes a difference on defense with his speed, and by keeping B. Smith in the middle.\r\n- I like the decision to put Allen and Tate back on KO returns.  Or Theo and Armando.  What are we waiting for?  Let's play to win not to save guys for a later date.  And get a runback.  KO's have improved.  (flipside... Polian is still failing: Blocked XP, no runbacks)\r\n- Kamara is a nice role player.  He had a nice game with 2 nice catches.  It's unfortunate he slipped, and he should have been a decoy in that situation, not the go-to guy imo\r\n- John Goodman... would like to see more of this athlete the next 2-3 years.  \r\n- Floyd comes back in a couple games.  Imagine a passing offense with Clausen, Tate, Floyd, Rudolph, Parris -- who just scored 27 vs the best defense in the country, and missed 3 chances on Nth and goal to score 34.\r\n\r\n-Optimist\r\n"}, "id"=>"1"}
+  [4;36;1mPost Load (0.9ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "updated_at", "post_id", "created_at") VALUES(E'USC, notre dame', '2009-10-31 01:52:36.027629', 1, '2009-10-31 01:52:36.027629') RETURNING "id"[0m
+  [4;35;1mSQL (9.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/posts/1
+Completed in 37ms (DB: 11) | 302 Found [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-30 18:52:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.7ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 1) [0m
+Completed in 20ms (View: 8, DB: 2) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-10-30 18:52:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.9ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "tags" WHERE ("tags".post_id = 1) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".post_id = 1) [0m
+Rendered posts/_form (12.2ms)
+Completed in 26ms (View: 13, DB: 2) | 200 OK [http://localhost/posts/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#update (for 127.0.0.1 at 2009-10-30 18:52:52) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"9mnPtudTho53UWLopHVQmQxl9CPG0mxWTP1g2XCNpEM=", "post"=>{"tags_attributes"=>{"0"=>{"name"=>"USC, notre dame", "_delete"=>"0", "id"=>"1"}}, "name"=>"Irish Optimist", "title"=>"USC game", "content"=>"Dear Optimists,\r\n\r\nI take many more positives from this than negatives.   \r\n\r\nMaybe Brad can comment about the atmosphere at the game, but it looked like a wild place to be.  Was 1 xp and :01 from being the win of the decade the comeback of the decade.  Terrible loss, but unbelievably exciting game.  I am crushed.  We should have won that game.  Lost my voice again.\r\n\r\nThat being said, this team should win 10 games.  There is *no doubt*.  Nobody on their schedule should be within 1 touchdown of the Irish the rest of the year.  I think we won the many of those elite recruits.  \r\n\r\nCritiques:\r\n- the last series, there could have been 25 seconds left with 1 timeout, second and goal at the 8 (even without the penalty).  as we discussed in Parker's living room, that would have opened more options for passes over middle, run game, etc.  They *should* have scored in that last series (we were calling for a timeout with 25, 24, 23... seconds left... loudly... at the time)\r\n- I question the play call \"high low\" whatever all that bullshit, in the last :01.  In 1-on-1 coverage, i throw the ball to Rudolph there every time.  texted it before the play and we yelled it out loud sitting next to Nephew and Parker.  EVERY. SINGLE. TIME.  EVERYTIME.  Get it to Rudolph.  He has cf mitts on both hands, he's a gamer, he's a playmaker. 1 on 1 coverage outside to him, lob it to the corner and take your chances.  He caught the one 2 plays prior, with a knee out of bounds.  Duval would have been my 5th choice after Rudolph, Tate, Parris, Hughes out of backfield.  My two cents.  It didn't look that open to me anyway, even if he hadn't slipped.  You put Kamara in a situation he is not ready for, not used to, etc after having a whopping FIVE catches this year before this game.  effing ridiculous, frustrates me.  Get it to Rudolph.\r\n- the Tenuta sell-out to stop the run on 3rd down is WAY TOO SUICIDAL.  This is not the goal line, it's the 40 yard line.  How can the tight end go for 50 yards on a 3rd and 1?  It's inexcusable.  It has happened a few times.  imo he shoulders more blame than anyone on the staff for the 2 losses.  He's nuts, this guy.  They do not have the personnel to run these over-aggressive schemes.  Let Barkley make a mistake.  (aside on Barkley: that guy sucks.  In my honest opinion, he has the arm of a woman, lobs the ball to these monsters at wideout and they make plays.  He is not a very good quarterback.  Maybe he is injured, but he has no zip, no accuracy, and all day to throw  I look forward to seeing who USC plays in a bowl game.)\r\n- Clausen looked rusty and rattled in the first half.  He did not move well in the pocket in the first half.  The line performed pretty well in the first half, but Clausen didn't help them out much.  He righted the ship in the 2nd half.\r\n\r\nPositives:\r\n- the heart and guts by this team is remarkable.  They fight to win every play, and they believe.  There is no doubt they can play with anyone.\r\n- Golden Tate is an absolute ManChild.  He is a man.  Amongst boys.  Including Taylor Mays.  He makes plays.  Gimme the ball.  He scored that TD in Taylor Mays' face not once, but 2x.  He took Mays' best shot on the crossing route and Mays got the worst of it.  He caught that perfect long pass in double coverage and held on.  He caught a first down in the 4th quarter and held the ball out in an almost taunting manner to say \"ya see this, you are not getting it.\".  This guy has the skills, athleticism, and attitude of an absolute champion.  Strength and Honor.  Maximus.\r\n- Robby Parris, you have emerged.  The big catches today, including the unbelievable catch on 4th and 10 in that traffic.  A vicious hit by Mays (he should be suspended for that hit, a pure cheap shot, blow to the head to a guy on the ground.). I hope he is not injured by that cheap head shot by Mays on 4th down.  Mays is an athletic guy, but a head hunter. Parris is sure handed, smart player, finds holes in zones.  A nice complement in Floyd's absence.\r\n- Clausen is still the best QB in the country.  2nd half looked great.  The long pass to Tate was perfect.  Many other great throws in traffic in the second half.  Many smart decisions to check it down, take the profit, throw it OB, not throw a pick.  Big numbers in the second half against the best defense in the country.\r\n- Manti Te'o makes a difference on defense with his speed, and by keeping B. Smith in the middle.\r\n- I like the decision to put Allen and Tate back on KO returns.  Or Theo and Armando.  What are we waiting for?  Let's play to win not to save guys for a later date.  And get a runback.  KO's have improved.  (flipside... Polian is still failing: Blocked XP, no runbacks)\r\n- Kamara is a nice role player.  He had a nice game with 2 nice catches.  It's unfortunate he slipped, and he should have been a decoy in that situation, not the go-to guy imo\r\n- John Goodman... would like to see more of this athlete the next 2-3 years.  \r\n- Floyd comes back in a couple games.  Imagine a passing offense with Clausen, Tate, Floyd, Rudolph, Parris -- who just scored 27 vs the best defense in the country, and missed 3 chances on Nth and goal to score 34.\r\n\r\n-Optimist\r\n"}, "id"=>"1"}
+  [4;35;1mPost Load (1.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".post_id = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3001/posts/1
+Completed in 84ms (DB: 2) | 302 Found [http://localhost/posts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-30 18:52:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.7ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 1) [0m
+Completed in 20ms (View: 8, DB: 2) | 200 OK [http://localhost/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-30 18:53:16) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-30 18:53:17) [GET]
+  [4;35;1mPost Load (2.1ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 17ms (View: 10, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-30 19:12:01) [GET]
+  [4;36;1mPost Load (2.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 17ms (View: 10, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-30 19:12:17) [GET]
+  [4;35;1mPost Load (2.1ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 17ms (View: 10, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-10-30 19:12:19) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Rendered posts/_form (8.5ms)
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/posts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-10-30 19:12:45) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"9mnPtudTho53UWLopHVQmQxl9CPG0mxWTP1g2XCNpEM=", "post"=>{"tags_attributes"=>{"0"=>{"name"=>"2009, WSU"}}, "name"=>"Mark Holton", "title"=>"heading to san antonio", "content"=>"to take on the Cougs!"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "posts" ("name", "updated_at", "title", "content", "created_at") VALUES(E'Mark Holton', '2009-10-31 02:12:45.433363', E'heading to san antonio', E'to take on the Cougs!', '2009-10-31 02:12:45.433363') RETURNING "id"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO "tags" ("name", "updated_at", "post_id", "created_at") VALUES(E'2009, WSU', '2009-10-31 02:12:45.441355', 3, '2009-10-31 02:12:45.441355') RETURNING "id"[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/posts/3
+Completed in 33ms (DB: 2) | 302 Found [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-30 19:12:45) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.7ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 3) [0m
+Completed in 18ms (View: 6, DB: 2) | 200 OK [http://localhost/posts/3]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-30 19:12:47) [GET]
+  [4;36;1mPost Load (2.2ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 20ms (View: 12, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-30 19:12:51) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.6ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 3) [0m
+Completed in 18ms (View: 6, DB: 2) | 200 OK [http://localhost/posts/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-30 19:13:27) [GET]
+  [4;35;1mPost Load (2.1ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 19ms (View: 12, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-30 19:13:30) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPost Load (0.7ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.7ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 3) [0m
+Completed in 18ms (View: 6, DB: 2) | 200 OK [http://localhost/posts/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-10-30 19:13:32) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPost Load (0.7ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "tags" WHERE ("tags".post_id = 3) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".post_id = 3) [0m
+Rendered posts/_form (11.9ms)
+Completed in 25ms (View: 13, DB: 2) | 200 OK [http://localhost/posts/3/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-30 19:15:32) [GET]
+  [4;35;1mPost Load (2.2ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 19ms (View: 12, DB: 3) | 200 OK [http://localhost/posts]

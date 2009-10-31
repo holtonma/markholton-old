@@ -1,19 +1,35 @@
-<% form_for(@post) do |f| %>
-  <%= f.error_messages %>
+<% @post.tags.build if @post.tags.empty? %>
+
+<% form_for(@post) do |post_form| %>
+  <%= post_form.error_messages %>
 
   <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= post_form.label :name %><br />
+    <%= post_form.text_field :name %>
   </p>
   <p>
-    <%= f.label :title, "title" %><br />
-    <%= f.text_field :title %>
+    <%= post_form.label :title, "title" %><br />
+    <%= post_form.text_field :title %>
   </p>
   <p>
-    <%= f.label :content %><br />
-    <%= f.text_area :content %>
+    <%= post_form.label :content %><br />
+    <%= post_form.text_area :content %>
   </p>
+  <h2>Tags</h2>
+  <% post_form.fields_for :tags do |tag_form| %>
+    <p>
+      <%= tag_form.label :name, 'Tag:' %>
+      <%= tag_form.text_field :name %>
+    </p>
+    <% unless tag_form.object.nil? || tag_form.object.new_record? %>
+      <p>
+        <%= tag_form.label :_delete, 'Remove:' %>
+        <%= tag_form.check_box :_delete %>
+      </p>
+    <% end %>
+  <% end %>
+
   <p>
-    <%= f.submit "Save" %>
+    <%= post_form.submit "Save" %>
   </p>
 <% end %>
