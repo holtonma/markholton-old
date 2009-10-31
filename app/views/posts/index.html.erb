@@ -3,7 +3,7 @@
 <% @posts.each do |post| %>
   <h2><%=h post.title %></h2>
   <div>by: <%=h post.name %></div>
-  <div><%=h post.content %></div>
+  <div><%= post.content %></div>
   <div>
     <%= link_to 'Show', post %> | 
     <%= link_to 'Edit', edit_post_path(post) %> |
