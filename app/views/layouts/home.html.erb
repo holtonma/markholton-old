@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Posts: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'main' %>
+  <%# stylesheet_link_tag 'print' %>
+  <!--[if lte IE 6]>
+  <%= stylesheet_link_tag 'ie6_or_less.css' %>
+  <![endif]--> 
+</head>
+
+<body id="type-c">
+<div id="wrap">
+  <div id="header">
+		<div id="site-name">Irish Optimist</div>
+		<div id="search">
+			<!-- 
+			<form action="">
+			<label for="searchsite">Site Search:</label>
+			<input id="searchsite" name="searchsite" type="text" />
+			<input type="submit" value="Go" class="f-submit" />
+			</form>
+			-->
+		</div>
+		<ul id="nav">
+		<li class="first active"><a href="#">Home</a></li>
+		<li><a href="#">Irish Footbal News</a>
+			<ul>
+			  <li class="first"><a href="#">Charlie Weis</a></li>
+			  <li><a href="#">Jimmy Clausen</a></li>
+			  <li><a href="#">Recruiting</a></li>
+			</ul>
+		</li>
+		<li class=""><a href="#">Posts</a></li>
+		</ul>
+	</div>
+	
+	<div id="content-wrap">
+	  
+		<div id="utility">
+      <h3>Irish News:</h3>
+			<ul id="nav-secondary">
+			<li class="first"><a href="#">South Bend Tribune</a></li>
+			<li><a href="#">Chicago Tribune</a></li>
+			<li class="active"><a href="#">Chicago Sun-Times</a>
+				<ul>
+				<li class="first"><a href="#">Letsgo Surfingus</a></li>
+				<li><a href="#">Nothingo on tivio</a></li>
+				<li class="active"><a href="#">Wanta a coffeo</a></li>
+				<li class="last"><a href="#">Nothingo on tivio</a></li>
+				</ul>
+			</li>
+			<li><a href="#">ESPN</a></li>
+			<li><a href="#">NDNation</a></li>
+			<li><a href="#">WNDU.com</a></li>
+      <li><a href="#">FoxSports.com</a></li>
+      <li><a href="#">UHND.com</a></li>
+      <li><a href="#">NBCSports.com</a></li>
+      <li class="last"><a href="#">Yahoo! Sports</a></li>
+      </ul>
+		</div>
+		
+		<div id="content">
+		
+			<p style="color: green"><%= flash[:notice] %></p>
+  	  <%= yield %>
+      
+			
+			<div id="footer">
+			  <p>IrishOptimist.com is not affiliated with, sponsored by, or endorsed by the University of Notre Dame. Copyright &copy; <%= Time.now.year %> IrishOptimist.com, All rights reserved</p>
+			  <p><a href="#">Contact Us</a> | <a href="#">Privacy</a> | <a href="#">Links</a></p>
+			</div>
+		</div>
+		
+		<div id="sidebar">
+			<div class="featurebox"><%= render :partial => "sponsors" %></div>
+			<div class="featurebox"><%= render :partial => "schedule_2009" %></div>
+		</div>
+		
+    <div id="poweredby">
+      <a href="http://www.IrishOptimist.com/"><%= image_tag("optimist.png", :alt => "IrishOptimist.com") %></a>
+    </div>
+		
+	</div>
+	
+</div>
+
+</body>
+
+</html>
+
+
+
