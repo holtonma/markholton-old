@@ -2,7 +2,10 @@
 
 <% @posts.each do |post| %>
   <h2><%=h post.title %></h2>
-  <div>by: <%=h post.name %> created at: <%= post.created_at %></div>
+  <div>
+    by: <%=h post.name %>   
+    <i>created <%= distance_of_time_in_words(post.created_at, Time.now) %> ago</i>
+  </div> 
   <div><%= post.content %></div>
   <div>
     <%= link_to 'Show', post %> | 
