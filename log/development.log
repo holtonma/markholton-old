@@ -9922,3 +9922,12 @@ ActionController::RoutingError (No route matches "/stylesheets/images/content_wr
   
 
 Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#index (for 127.0.0.1 at 2009-10-31 00:47:30) [GET]
+  [4;35;1mNewspaper Load (2.1ms)[0m   [0mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/index
+Completed in 72ms (View: 56, DB: 2) | 200 OK [http://localhost/newspapers]
