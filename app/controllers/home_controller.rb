@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @posts = Post.all
+    @posts = Post.find(:all, :include => [:comments])
     @news = Newspaper.find(:all, :include => [:articles])
     
     respond_to do |format|

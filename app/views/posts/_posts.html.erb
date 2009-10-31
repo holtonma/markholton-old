@@ -6,6 +6,24 @@
   </div> 
   <div><%= post.content %></div>
   <!--
+  @comments = post.comments
+  <%# link_to 'Add Comment', post_comment_path(@post, comment) %>
+  -->
+  <h3>COMMENTS:</h3>
+  <% post.comments.each do |c| %>
+    <div class="bubble">
+      <blockquote>
+        <%=h c.body %>
+      </blockquote>
+      <cite>
+        <strong><%=h c.commenter %>:</strong> <%= distance_of_time_in_words(c.created_at, Time.now) %> ago
+      </cite>
+    </div>
+  <% end %>
+  
+  <%= link_to 'Add Comment', new_post_comment_path(post) %>
+  
+  <!--
   <div>
     <%# link_to 'Show', post %> | 
     <%# link_to 'Edit', edit_post_path(post) %> |
