@@ -750,3 +750,89 @@ Processing PostsController#index (for 127.0.0.1 at 2009-10-30 19:15:32) [GET]
 Rendering template within layouts/posts
 Rendering posts/index
 Completed in 19ms (View: 12, DB: 3) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-30 19:37:11) [GET]
+  [4;36;1mPost Load (2.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 47ms (View: 16, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-30 19:44:18) [GET]
+  [4;35;1mPost Load (2.1ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 88ms (View: 81, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-30 19:46:35) [GET]
+  [4;36;1mPost Load (2.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 24ms (View: 17, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-10-30 19:46:47) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPost Load (0.7ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tags" WHERE ("tags".post_id = 3) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".post_id = 3) [0m
+Rendered posts/_form (14.1ms)
+Completed in 32ms (View: 19, DB: 2) | 200 OK [http://localhost/posts/3/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-10-30 19:46:47) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPost Load (0.7ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "tags" WHERE ("tags".post_id = 3) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".post_id = 3) [0m
+Rendered posts/_form (12.3ms)
+Completed in 26ms (View: 13, DB: 2) | 200 OK [http://localhost/posts/3/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#update (for 127.0.0.1 at 2009-10-30 19:47:01) [PUT]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"9mnPtudTho53UWLopHVQmQxl9CPG0mxWTP1g2XCNpEM=", "post"=>{"tags_attributes"=>{"0"=>{"name"=>"2009, WSU", "_delete"=>"0", "id"=>"2"}}, "name"=>"Mark Holton", "title"=>"Heading to San Antonio", "content"=>"to take on the Cougs!"}, "id"=>"3"}
+  [4;35;1mPost Load (0.7ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".post_id = 3) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Update (0.5ms)[0m   [0;1mUPDATE "posts" SET "title" = E'Heading to San Antonio', "updated_at" = '2009-10-31 02:47:01.359624' WHERE "id" = 3[0m
+  [4;35;1mSQL (51.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/posts/3
+Completed in 74ms (DB: 54) | 302 Found [http://localhost/posts/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-30 19:47:01) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPost Load (0.7ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.7ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 3) [0m
+Completed in 18ms (View: 5, DB: 2) | 200 OK [http://localhost/posts/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-30 19:47:02) [GET]
+  [4;36;1mPost Load (2.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 24ms (View: 17, DB: 2) | 200 OK [http://localhost/posts]
