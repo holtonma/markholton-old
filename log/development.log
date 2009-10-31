@@ -7959,3 +7959,1966 @@ ActionController::RoutingError (No route matches "/stylesheets/images/featurebox
   
 
 Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-30 23:30:21) [GET]
+  [4;35;1mPost Load (2.3ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (12.5ms)
+Rendered home/_header (1.0ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 135ms (View: 127, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 23:30:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 23:30:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 23:30:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-30 23:31:15) [GET]
+  [4;36;1mPost Load (2.2ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (11.8ms)
+Rendered home/_tabsheader (0.9ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 36ms (View: 28, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 23:31:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 23:31:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 23:31:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20091031011937)
+Migrating to CreateComments (20091031014231)
+Migrating to CreateTags (20091031015034)
+Migrating to CreateNewspapers (20091031063740)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (121.5ms)[0m   [0;1mCREATE TABLE "newspapers" ("id" serial primary key, "name" character varying(255), "url" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091031063740')[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20091031011937)
+Migrating to CreateComments (20091031014231)
+Migrating to CreateTags (20091031015034)
+Migrating to CreateNewspapers (20091031063740)
+Migrating to CreateArticles (20091031064101)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (70.5ms)[0m   [0;1mCREATE TABLE "articles" ("id" serial primary key, "newspaper_id" integer, "title" character varying(255), "url" character varying(255), "printed_date" timestamp, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091031064101')[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-10-30 23:45:07) [GET]
+  [4;35;1mArticle Load (2.0ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 21ms (View: 13, DB: 2) | 200 OK [http://localhost/articles]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2009-10-30 23:45:10) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 87ms (View: 76, DB: 0) | 200 OK [http://localhost/articles/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspaperController#index (for 127.0.0.1 at 2009-10-30 23:46:19) [GET]
+Rendering newspaper/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/newspaper]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#index (for 127.0.0.1 at 2009-10-30 23:46:23) [GET]
+  [4;36;1mNewspaper Load (1.8ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/index
+Completed in 19ms (View: 12, DB: 2) | 200 OK [http://localhost/newspapers]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#new (for 127.0.0.1 at 2009-10-30 23:46:25) [GET]
+Rendering template within layouts/newspapers
+Rendering newspapers/new
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://localhost/newspapers/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#create (for 127.0.0.1 at 2009-10-30 23:46:41) [POST]
+  Parameters: {"commit"=>"Create", "newspaper"=>{"name"=>"Chicago Tribune", "url"=>"http://chicagotribune.com"}, "authenticity_token"=>"9mnPtudTho53UWLopHVQmQxl9CPG0mxWTP1g2XCNpEM="}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (18.3ms)[0m   [0;1mINSERT INTO "newspapers" ("name", "updated_at", "url", "created_at") VALUES(E'Chicago Tribune', '2009-10-31 06:46:41.419686', E'http://chicagotribune.com', '2009-10-31 06:46:41.419686') RETURNING "id"[0m
+  [4;35;1mSQL (18.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/newspapers/1
+Completed in 57ms (DB: 38) | 302 Found [http://localhost/newspapers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#show (for 127.0.0.1 at 2009-10-30 23:46:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mNewspaper Load (0.8ms)[0m   [0;1mSELECT * FROM "newspapers" WHERE ("newspapers"."id" = 1) [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/show
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/newspapers/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#index (for 127.0.0.1 at 2009-10-30 23:46:43) [GET]
+  [4;35;1mNewspaper Load (1.9ms)[0m   [0mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/index
+Completed in 17ms (View: 10, DB: 2) | 200 OK [http://localhost/newspapers]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#new (for 127.0.0.1 at 2009-10-30 23:46:44) [GET]
+Rendering template within layouts/newspapers
+Rendering newspapers/new
+Completed in 15ms (View: 4, DB: 0) | 200 OK [http://localhost/newspapers/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20091031011937)
+Migrating to CreateComments (20091031014231)
+Migrating to CreateTags (20091031015034)
+Migrating to CreateNewspapers (20091031063740)
+Migrating to CreateArticles (20091031064101)
+Migrating to AddRankingToNewspapers (20091031064715)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20091031011937)
+Migrating to CreateComments (20091031014231)
+Migrating to CreateTags (20091031015034)
+Migrating to CreateNewspapers (20091031063740)
+Migrating to CreateArticles (20091031064101)
+Migrating to AddRankingToNewspapers (20091031064715)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (37.2ms)[0m   [0;1mALTER TABLE "newspapers" ADD COLUMN "ranking" integer[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091031064715')[0m
+  [4;36;1mSQL (30.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#new (for 127.0.0.1 at 2009-10-30 23:51:16) [GET]
+Rendering template within layouts/newspapers
+Rendering newspapers/new
+Completed in 21ms (View: 10, DB: 0) | 200 OK [http://localhost/newspapers/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#index (for 127.0.0.1 at 2009-10-30 23:51:19) [GET]
+  [4;36;1mNewspaper Load (2.0ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/index
+Completed in 85ms (View: 15, DB: 2) | 200 OK [http://localhost/newspapers]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#edit (for 127.0.0.1 at 2009-10-30 23:51:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mNewspaper Load (0.8ms)[0m   [0mSELECT * FROM "newspapers" WHERE ("newspapers"."id" = 1) [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/edit
+Completed in 22ms (View: 10, DB: 1) | 200 OK [http://localhost/newspapers/1/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#update (for 127.0.0.1 at 2009-10-30 23:51:25) [PUT]
+  Parameters: {"commit"=>"Update", "newspaper"=>{"name"=>"Chicago Tribune", "ranking"=>"1", "url"=>"http://chicagotribune.com"}, "authenticity_token"=>"9mnPtudTho53UWLopHVQmQxl9CPG0mxWTP1g2XCNpEM=", "id"=>"1"}
+  [4;36;1mNewspaper Load (0.9ms)[0m   [0;1mSELECT * FROM "newspapers" WHERE ("newspapers"."id" = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mNewspaper Update (0.5ms)[0m   [0;1mUPDATE "newspapers" SET "ranking" = 1, "updated_at" = '2009-10-31 06:51:25.638164' WHERE "id" = 1[0m
+  [4;35;1mSQL (9.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/newspapers/1
+Completed in 26ms (DB: 12) | 302 Found [http://localhost/newspapers/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#show (for 127.0.0.1 at 2009-10-30 23:51:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mNewspaper Load (0.8ms)[0m   [0;1mSELECT * FROM "newspapers" WHERE ("newspapers"."id" = 1) [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/show
+Completed in 23ms (View: 8, DB: 1) | 200 OK [http://localhost/newspapers/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#index (for 127.0.0.1 at 2009-10-30 23:51:27) [GET]
+  [4;35;1mNewspaper Load (1.9ms)[0m   [0mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/index
+Completed in 16ms (View: 10, DB: 2) | 200 OK [http://localhost/newspapers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#index (for 127.0.0.1 at 2009-10-30 23:51:48) [GET]
+  [4;36;1mNewspaper Load (2.1ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/index
+Completed in 22ms (View: 14, DB: 2) | 200 OK [http://localhost/newspapers]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#index (for 127.0.0.1 at 2009-10-30 23:52:00) [GET]
+  [4;35;1mNewspaper Load (1.9ms)[0m   [0mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/index
+Completed in 19ms (View: 11, DB: 2) | 200 OK [http://localhost/newspapers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-30 23:52:10) [GET]
+  [4;36;1mPost Load (2.2ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (14.2ms)
+Rendered home/_tabsheader (0.1ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 25ms (View: 17, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 23:52:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 23:52:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#new (for 127.0.0.1 at 2009-10-30 23:52:12) [GET]
+Rendering template within layouts/newspapers
+Rendering newspapers/new
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/newspapers/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#create (for 127.0.0.1 at 2009-10-30 23:52:25) [POST]
+  Parameters: {"commit"=>"Create", "newspaper"=>{"name"=>"South Bend Tribune", "ranking"=>"2", "url"=>""}, "authenticity_token"=>"9mnPtudTho53UWLopHVQmQxl9CPG0mxWTP1g2XCNpEM="}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO "newspapers" ("name", "updated_at", "url", "ranking", "created_at") VALUES(E'South Bend Tribune', '2009-10-31 06:52:25.094537', E'', 2, '2009-10-31 06:52:25.094537') RETURNING "id"[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/newspapers/2
+Completed in 21ms (DB: 2) | 302 Found [http://localhost/newspapers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#show (for 127.0.0.1 at 2009-10-30 23:52:25) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mNewspaper Load (0.8ms)[0m   [0;1mSELECT * FROM "newspapers" WHERE ("newspapers"."id" = 2) [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/show
+Completed in 15ms (View: 3, DB: 1) | 200 OK [http://localhost/newspapers/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#index (for 127.0.0.1 at 2009-10-30 23:52:26) [GET]
+  [4;35;1mNewspaper Load (2.0ms)[0m   [0mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/index
+Completed in 19ms (View: 12, DB: 2) | 200 OK [http://localhost/newspapers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#new (for 127.0.0.1 at 2009-10-30 23:52:27) [GET]
+Rendering template within layouts/newspapers
+Rendering newspapers/new
+Completed in 16ms (View: 5, DB: 0) | 200 OK [http://localhost/newspapers/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#create (for 127.0.0.1 at 2009-10-30 23:52:37) [POST]
+  Parameters: {"commit"=>"Create", "newspaper"=>{"name"=>"Chicago Sun Times", "ranking"=>"3", "url"=>"chicagosuntimes.com"}, "authenticity_token"=>"9mnPtudTho53UWLopHVQmQxl9CPG0mxWTP1g2XCNpEM="}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO "newspapers" ("name", "updated_at", "url", "ranking", "created_at") VALUES(E'Chicago Sun Times', '2009-10-31 06:52:37.926321', E'chicagosuntimes.com', 3, '2009-10-31 06:52:37.926321') RETURNING "id"[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3001/newspapers/3
+Completed in 22ms (DB: 2) | 302 Found [http://localhost/newspapers]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#show (for 127.0.0.1 at 2009-10-30 23:52:37) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mNewspaper Load (0.8ms)[0m   [0mSELECT * FROM "newspapers" WHERE ("newspapers"."id" = 3) [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/show
+Completed in 14ms (View: 3, DB: 1) | 200 OK [http://localhost/newspapers/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#index (for 127.0.0.1 at 2009-10-30 23:52:39) [GET]
+  [4;36;1mNewspaper Load (1.9ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/index
+Completed in 22ms (View: 15, DB: 2) | 200 OK [http://localhost/newspapers]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#new (for 127.0.0.1 at 2009-10-30 23:52:40) [GET]
+Rendering template within layouts/newspapers
+Rendering newspapers/new
+Completed in 15ms (View: 4, DB: 0) | 200 OK [http://localhost/newspapers/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#create (for 127.0.0.1 at 2009-10-30 23:53:06) [POST]
+  Parameters: {"commit"=>"Create", "newspaper"=>{"name"=>"ESPN", "ranking"=>"4", "url"=>"http://espn.go.com/chicago/"}, "authenticity_token"=>"9mnPtudTho53UWLopHVQmQxl9CPG0mxWTP1g2XCNpEM="}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO "newspapers" ("name", "updated_at", "url", "ranking", "created_at") VALUES(E'ESPN', '2009-10-31 06:53:06.682454', E'http://espn.go.com/chicago/', 4, '2009-10-31 06:53:06.682454') RETURNING "id"[0m
+  [4;35;1mSQL (113.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/newspapers/4
+Completed in 135ms (DB: 114) | 302 Found [http://localhost/newspapers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#show (for 127.0.0.1 at 2009-10-30 23:53:06) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mNewspaper Load (0.8ms)[0m   [0;1mSELECT * FROM "newspapers" WHERE ("newspapers"."id" = 4) [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/show
+Completed in 15ms (View: 3, DB: 1) | 200 OK [http://localhost/newspapers/4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#index (for 127.0.0.1 at 2009-10-30 23:53:15) [GET]
+  [4;35;1mNewspaper Load (2.0ms)[0m   [0mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/index
+Completed in 25ms (View: 17, DB: 2) | 200 OK [http://localhost/newspapers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#new (for 127.0.0.1 at 2009-10-30 23:53:17) [GET]
+Rendering template within layouts/newspapers
+Rendering newspapers/new
+Completed in 84ms (View: 74, DB: 0) | 200 OK [http://localhost/newspapers/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#create (for 127.0.0.1 at 2009-10-30 23:53:31) [POST]
+  Parameters: {"commit"=>"Create", "newspaper"=>{"name"=>"WNDU.com", "ranking"=>"5", "url"=>"http://wndu.com"}, "authenticity_token"=>"9mnPtudTho53UWLopHVQmQxl9CPG0mxWTP1g2XCNpEM="}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "newspapers" ("name", "updated_at", "url", "ranking", "created_at") VALUES(E'WNDU.com', '2009-10-31 06:53:31.035151', E'http://wndu.com', 5, '2009-10-31 06:53:31.035151') RETURNING "id"[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3001/newspapers/5
+Completed in 22ms (DB: 2) | 302 Found [http://localhost/newspapers]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#show (for 127.0.0.1 at 2009-10-30 23:53:31) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mNewspaper Load (0.8ms)[0m   [0mSELECT * FROM "newspapers" WHERE ("newspapers"."id" = 5) [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/show
+Completed in 15ms (View: 3, DB: 1) | 200 OK [http://localhost/newspapers/5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#index (for 127.0.0.1 at 2009-10-30 23:53:34) [GET]
+  [4;36;1mNewspaper Load (2.1ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/index
+Completed in 28ms (View: 20, DB: 2) | 200 OK [http://localhost/newspapers]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#new (for 127.0.0.1 at 2009-10-30 23:53:35) [GET]
+Rendering template within layouts/newspapers
+Rendering newspapers/new
+Completed in 16ms (View: 6, DB: 0) | 200 OK [http://localhost/newspapers/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#create (for 127.0.0.1 at 2009-10-30 23:53:46) [POST]
+  Parameters: {"commit"=>"Create", "newspaper"=>{"name"=>"UHND.com", "ranking"=>"6", "url"=>"UHND.com"}, "authenticity_token"=>"9mnPtudTho53UWLopHVQmQxl9CPG0mxWTP1g2XCNpEM="}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO "newspapers" ("name", "updated_at", "url", "ranking", "created_at") VALUES(E'UHND.com', '2009-10-31 06:53:46.816731', E'UHND.com', 6, '2009-10-31 06:53:46.816731') RETURNING "id"[0m
+  [4;35;1mSQL (439.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/newspapers/6
+Completed in 497ms (DB: 441) | 302 Found [http://localhost/newspapers]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#show (for 127.0.0.1 at 2009-10-30 23:53:47) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mNewspaper Load (0.8ms)[0m   [0;1mSELECT * FROM "newspapers" WHERE ("newspapers"."id" = 6) [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/show
+Completed in 15ms (View: 3, DB: 1) | 200 OK [http://localhost/newspapers/6]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#index (for 127.0.0.1 at 2009-10-30 23:53:48) [GET]
+  [4;35;1mNewspaper Load (2.1ms)[0m   [0mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/index
+Completed in 30ms (View: 22, DB: 2) | 200 OK [http://localhost/newspapers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#new (for 127.0.0.1 at 2009-10-30 23:53:49) [GET]
+Rendering template within layouts/newspapers
+Rendering newspapers/new
+Completed in 17ms (View: 5, DB: 0) | 200 OK [http://localhost/newspapers/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#create (for 127.0.0.1 at 2009-10-30 23:54:02) [POST]
+  Parameters: {"commit"=>"Create", "newspaper"=>{"name"=>"NBCSports.com", "ranking"=>"7", "url"=>"http://nbcsports.com"}, "authenticity_token"=>"9mnPtudTho53UWLopHVQmQxl9CPG0mxWTP1g2XCNpEM="}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "newspapers" ("name", "updated_at", "url", "ranking", "created_at") VALUES(E'NBCSports.com', '2009-10-31 06:54:02.940925', E'http://nbcsports.com', 7, '2009-10-31 06:54:02.940925') RETURNING "id"[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3001/newspapers/7
+Completed in 22ms (DB: 2) | 302 Found [http://localhost/newspapers]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#show (for 127.0.0.1 at 2009-10-30 23:54:02) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mNewspaper Load (0.8ms)[0m   [0mSELECT * FROM "newspapers" WHERE ("newspapers"."id" = 7) [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/show
+Completed in 16ms (View: 3, DB: 1) | 200 OK [http://localhost/newspapers/7]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#index (for 127.0.0.1 at 2009-10-30 23:54:04) [GET]
+  [4;36;1mNewspaper Load (2.1ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/index
+Completed in 34ms (View: 26, DB: 2) | 200 OK [http://localhost/newspapers]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#new (for 127.0.0.1 at 2009-10-30 23:54:05) [GET]
+Rendering template within layouts/newspapers
+Rendering newspapers/new
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/newspapers/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#create (for 127.0.0.1 at 2009-10-30 23:54:27) [POST]
+  Parameters: {"commit"=>"Create", "newspaper"=>{"name"=>"Yahoo! Sports", "ranking"=>"8", "url"=>"http://sports.yahoo.com"}, "authenticity_token"=>"9mnPtudTho53UWLopHVQmQxl9CPG0mxWTP1g2XCNpEM="}
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO "newspapers" ("name", "updated_at", "url", "ranking", "created_at") VALUES(E'Yahoo! Sports', '2009-10-31 06:54:27.649861', E'http://sports.yahoo.com', 8, '2009-10-31 06:54:27.649861') RETURNING "id"[0m
+  [4;35;1mSQL (23.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/newspapers/8
+Completed in 46ms (DB: 24) | 302 Found [http://localhost/newspapers]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#show (for 127.0.0.1 at 2009-10-30 23:54:27) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mNewspaper Load (0.9ms)[0m   [0;1mSELECT * FROM "newspapers" WHERE ("newspapers"."id" = 8) [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/show
+Completed in 16ms (View: 3, DB: 1) | 200 OK [http://localhost/newspapers/8]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#index (for 127.0.0.1 at 2009-10-30 23:54:29) [GET]
+  [4;35;1mNewspaper Load (2.4ms)[0m   [0mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/index
+Completed in 37ms (View: 28, DB: 3) | 200 OK [http://localhost/newspapers]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#new (for 127.0.0.1 at 2009-10-30 23:54:30) [GET]
+Rendering template within layouts/newspapers
+Rendering newspapers/new
+Completed in 18ms (View: 6, DB: 0) | 200 OK [http://localhost/newspapers/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#create (for 127.0.0.1 at 2009-10-30 23:54:53) [POST]
+  Parameters: {"commit"=>"Create", "newspaper"=>{"name"=>"Rivals.com", "ranking"=>"9", "url"=>"http://rivals.com"}, "authenticity_token"=>"9mnPtudTho53UWLopHVQmQxl9CPG0mxWTP1g2XCNpEM="}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mINSERT INTO "newspapers" ("name", "updated_at", "url", "ranking", "created_at") VALUES(E'Rivals.com', '2009-10-31 06:54:54.002694', E'http://rivals.com', 9, '2009-10-31 06:54:54.002694') RETURNING "id"[0m
+  [4;36;1mSQL (9.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3001/newspapers/9
+Completed in 38ms (DB: 12) | 302 Found [http://localhost/newspapers]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#show (for 127.0.0.1 at 2009-10-30 23:54:54) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mNewspaper Load (0.9ms)[0m   [0mSELECT * FROM "newspapers" WHERE ("newspapers"."id" = 9) [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/show
+Completed in 18ms (View: 3, DB: 1) | 200 OK [http://localhost/newspapers/9]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#index (for 127.0.0.1 at 2009-10-30 23:55:05) [GET]
+  [4;36;1mNewspaper Load (2.0ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/index
+Completed in 38ms (View: 30, DB: 2) | 200 OK [http://localhost/newspapers]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-10-30 23:55:15) [GET]
+  [4;35;1mArticle Load (2.0ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 19ms (View: 1, DB: 2) | 200 OK [http://localhost/articles]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2009-10-30 23:55:18) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 24ms (View: 13, DB: 0) | 200 OK [http://localhost/articles/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2009-10-30 23:58:41) [GET]
+
+NameError (uninitialized constant ArticlesController::Newspapers):
+  app/controllers/articles_controller.rb:28:in `new'
+
+Rendered rescues/_trace (112.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2009-10-30 23:59:54) [GET]
+
+NameError (uninitialized constant ArticlesController::Newspapers):
+  app/controllers/articles_controller.rb:28:in `new'
+
+Rendered rescues/_trace (31.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2009-10-31 00:00:20) [GET]
+  [4;36;1mNewspaper Load (0.9ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 71ms (View: 57, DB: 1) | 200 OK [http://localhost/articles/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2009-10-31 00:00:48) [GET]
+  [4;35;1mNewspaper Load (0.9ms)[0m   [0mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 33ms (View: 15, DB: 1) | 200 OK [http://localhost/articles/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2009-10-31 00:02:19) [GET]
+  [4;36;1mNewspaper Load (1.0ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 103ms (View: 20, DB: 1) | 200 OK [http://localhost/articles/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2009-10-31 00:02:31) [GET]
+  [4;35;1mNewspaper Load (0.8ms)[0m   [0mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 38ms (View: 21, DB: 1) | 200 OK [http://localhost/articles/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2009-10-31 00:03:49) [GET]
+  [4;36;1mNewspaper Load (0.9ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 36ms (View: 21, DB: 1) | 200 OK [http://localhost/articles/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2009-10-31 00:03:59) [GET]
+  [4;35;1mNewspaper Load (0.9ms)[0m   [0mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 55ms (View: 35, DB: 1) | 200 OK [http://localhost/articles/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20091031011937)
+Migrating to CreateComments (20091031014231)
+Migrating to CreateTags (20091031015034)
+Migrating to CreateNewspapers (20091031063740)
+Migrating to CreateArticles (20091031064101)
+Migrating to AddRankingToNewspapers (20091031064715)
+Migrating to AddContentToArticle (20091031070527)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mALTER TABLE "articles" ADD COLUMN "content" text[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091031070527')[0m
+  [4;36;1mSQL (30.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2009-10-31 00:06:32) [GET]
+  [4;36;1mNewspaper Load (0.9ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/articles
+Rendering articles/new
+
+ActionView::TemplateError (undefined local variable or method `post_form' for #<ActionView::Base:0x283a1b0>) on line #18 of app/views/articles/new.html.erb:
+15:     <%= f.text_field :url, :size => 100 %>
+16:   </p>
+17:   <p>
+18:     <%= post_form.label :content %><br />
+19:     <%= post_form.text_area :content %>
+20:   </p>
+21:   <p>
+
+    app/views/articles/new.html.erb:18
+    app/views/articles/new.html.erb:3
+    app/controllers/articles_controller.rb:30:in `new'
+
+Rendered rescues/_trace (42.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2009-10-31 00:06:58) [GET]
+  [4;35;1mNewspaper Load (0.8ms)[0m   [0mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 149ms (View: 65, DB: 1) | 200 OK [http://localhost/articles/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#new (for 127.0.0.1 at 2009-10-31 00:07:58) [GET]
+Rendering template within layouts/newspapers
+Rendering newspapers/new
+Completed in 45ms (View: 5, DB: 0) | 200 OK [http://localhost/newspapers/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#create (for 127.0.0.1 at 2009-10-31 00:08:21) [POST]
+  Parameters: {"commit"=>"Create", "newspaper"=>{"name"=>"Irish Sports Daily", "ranking"=>"10", "url"=>"http://www.irishsportsdaily.com/football"}, "authenticity_token"=>"mEv5CI6GREra4lhQSkcExsWorQVLVuCKeDbcsARRO68="}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO "newspapers" ("name", "updated_at", "url", "ranking", "created_at") VALUES(E'Irish Sports Daily', '2009-10-31 07:08:21.466227', E'http://www.irishsportsdaily.com/football', 10, '2009-10-31 07:08:21.466227') RETURNING "id"[0m
+  [4;36;1mSQL (49.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3001/newspapers/10
+Completed in 78ms (DB: 51) | 302 Found [http://localhost/newspapers]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing NewspapersController#show (for 127.0.0.1 at 2009-10-31 00:08:21) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mNewspaper Load (0.8ms)[0m   [0mSELECT * FROM "newspapers" WHERE ("newspapers"."id" = 10) [0m
+Rendering template within layouts/newspapers
+Rendering newspapers/show
+Completed in 16ms (View: 3, DB: 1) | 200 OK [http://localhost/newspapers/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2009-10-31 00:08:25) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mArticle Load (28.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 10) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=10):
+  app/controllers/articles_controller.rb:16:in `show'
+
+Rendered rescues/_trace (33.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-10-31 00:08:38) [GET]
+  [4;35;1mArticle Load (1.9ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 8ms (View: 1, DB: 2) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2009-10-31 00:08:40) [GET]
+  [4;36;1mNewspaper Load (0.9ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 32ms (View: 16, DB: 1) | 200 OK [http://localhost/articles/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2009-10-31 00:09:57) [POST]
+  Parameters: {"article"=>{"title"=>"Weis Updates Injuries &amp; More", "printed_date(1i)"=>"2009", "printed_date(2i)"=>"10", "url"=>"http://www.irishsportsdaily.com/football/1189-weis-updates-injuries-a-more", "printed_date(3i)"=>"29", "printed_date(4i)"=>"07", "printed_date(5i)"=>"24", "content"=>"On Thursday, Charlie Weis said that a number of his players will be game-time decisions on Saturday night against Washington State.\r\n\r\n“I don’t know if Darrin Walls was going to make it because he’d been sick, but he practiced today. He didn’t practice yesterday so I was a little concerned with that,” Weis said of the Notre Dame cornerback. “We have some guys that have bumps and bruises, to be honest with you I’ll go right until game time to decide whether or not I’m going to do something with them or not.\r\n\r\n“I want to do everything I can to win this game, but at the same time, if there’s some players that are right on the cusp of being able to go and not being able to go that I think a week would do them good then I’ll give them a week.”\r\n\r\nWide receiver Robby Parris is one of the guys on the edge..."}, "commit"=>"Create", "newspaper"=>{"id"=>"10"}, "authenticity_token"=>"mEv5CI6GREra4lhQSkcExsWorQVLVuCKeDbcsARRO68="}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (33.5ms)[0m   [0;1mINSERT INTO "articles" ("newspaper_id", "printed_date", "updated_at", "title", "url", "content", "created_at") VALUES(NULL, '2009-10-29 07:24:00.000000', '2009-10-31 07:09:57.738755', E'Weis Updates Injuries &amp; More', E'http://www.irishsportsdaily.com/football/1189-weis-updates-injuries-a-more', E'On Thursday, Charlie Weis said that a number of his players will be game-time decisions on Saturday night against Washington State.
+
+“I don’t know if Darrin Walls was going to make it because he’d been sick, but he practiced today. He didn’t practice yesterday so I was a little concerned with that,” Weis said of the Notre Dame cornerback. “We have some guys that have bumps and bruises, to be honest with you I’ll go right until game time to decide whether or not I’m going to do something with them or not.
+
+“I want to do everything I can to win this game, but at the same time, if there’s some players that are right on the cusp of being able to go and not being able to go that I think a week would do them good then I’ll give them a week.”
+
+Wide receiver Robby Parris is one of the guys on the edge...', '2009-10-31 07:09:57.738755') RETURNING "id"[0m
+  [4;35;1mSQL (44.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/articles/1
+Completed in 138ms (DB: 79) | 302 Found [http://localhost/articles]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2009-10-31 00:09:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.9ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 52ms (View: 40, DB: 1) | 200 OK [http://localhost/articles/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-10-31 00:10:06) [GET]
+  [4;35;1mArticle Load (2.0ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 19ms (View: 12, DB: 2) | 200 OK [http://localhost/articles]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:10:29) [GET]
+  [4;36;1mPost Load (2.8ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (14.6ms)
+Rendered home/_tabsheader (0.1ms)
+Rendered home/_sponsors (0.0ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 49ms (View: 30, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:10:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:10:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:13:03) [GET]
+  [4;35;1mPost Load (2.2ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (33.1ms)
+Rendered home/_tabsheader (0.1ms)
+Rendered newspapers/_latest (1.0ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 71ms (View: 63, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:13:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:13:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:13:36) [GET]
+  [4;36;1mPost Load (3.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (18.4ms)
+Rendered home/_tabsheader (0.1ms)
+Rendered newspapers/_latest (0.1ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 38ms (View: 28, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:13:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:13:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:13:43) [GET]
+  [4;35;1mPost Load (2.4ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (15.7ms)
+Rendered home/_tabsheader (0.1ms)
+Rendered newspapers/_latest (0.1ms)
+Rendered home/_sponsors (0.4ms)
+Rendered home/_schedule_2009 (0.2ms)
+Completed in 38ms (View: 29, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:13:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:13:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:15:06) [GET]
+  [4;36;1mPost Load (2.5ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (14.7ms)
+Rendered home/_tabsheader (0.1ms)
+Rendered newspapers/_latest (0.1ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.5ms)
+Completed in 47ms (View: 39, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:15:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:15:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:17:54) [GET]
+  [4;35;1mPost Load (2.3ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNewspaper Load (2.5ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+  [4;35;1mArticle Load (0.9ms)[0m   [0mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (11.2ms)
+Rendered home/_tabsheader (0.1ms)
+Rendered newspapers/_latest (0.1ms)
+Rendered home/_sponsors (0.0ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 147ms (View: 81, DB: 6) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:17:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:17:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mNewspaper Load (1.9ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+  [4;35;1mArticle Load (0.9ms)[0m   [0mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 9) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2009-10-31 00:22:17) [GET]
+  [4;36;1mNewspaper Load (2.5ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 60ms (View: 37, DB: 3) | 200 OK [http://localhost/articles/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-10-31 00:22:19) [GET]
+  [4;35;1mArticle Load (2.0ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 19ms (View: 12, DB: 2) | 200 OK [http://localhost/articles]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2009-10-31 00:22:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.9ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 58ms (View: 46, DB: 1) | 200 OK [http://localhost/articles/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2009-10-31 00:22:30) [PUT]
+  Parameters: {"article"=>{"newspaper_id"=>"10", "title"=>"Weis Updates Injuries &amp; More", "printed_date(1i)"=>"2009", "printed_date(2i)"=>"10", "url"=>"http://www.irishsportsdaily.com/football/1189-weis-updates-injuries-a-more", "printed_date(3i)"=>"29", "printed_date(4i)"=>"07", "printed_date(5i)"=>"24"}, "commit"=>"Update", "authenticity_token"=>"mEv5CI6GREra4lhQSkcExsWorQVLVuCKeDbcsARRO68=", "id"=>"1"}
+  [4;35;1mArticle Load (0.9ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mArticle Update (0.5ms)[0m   [0mUPDATE "articles" SET "newspaper_id" = 10, "updated_at" = '2009-10-31 07:22:30.627500' WHERE "id" = 1[0m
+  [4;36;1mSQL (47.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3001/articles/1
+Completed in 68ms (DB: 49) | 302 Found [http://localhost/articles/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2009-10-31 00:22:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 15ms (View: 3, DB: 1) | 200 OK [http://localhost/articles/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-10-31 00:22:32) [GET]
+  [4;36;1mArticle Load (2.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 20ms (View: 11, DB: 2) | 200 OK [http://localhost/articles]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:26:51) [GET]
+  [4;35;1mPost Load (2.3ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNewspaper Load (0.7ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (10.5ms)
+Rendered home/_tabsheader (0.1ms)
+
+ActionView::TemplateError (undefined local variable or method `post' for #<ActionView::Base:0x2552074>) on line #29 of app/views/newspapers/_latest.erb:
+26:     <% count = count + 1 %>
+27:     <li><a href="#" <% if count == 1 %>class="first" <% end %>><%= n.name %></a></li>
+28:     <div>
+29:       by: <%=h post.name %>   
+30:       <i>created <%= distance_of_time_in_words(post.created_at, Time.now) %> ago</i>
+31:     </div> 
+32:     <div><%= post.content %></div>
+
+    app/views/newspapers/_latest.erb:29
+    app/views/newspapers/_latest.erb:25:in `each'
+    app/views/newspapers/_latest.erb:25
+    app/views/layouts/home.html.erb:20
+    app/controllers/home_controller.rb:6:in `index'
+
+Rendered rescues/_trace (51.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:27:14) [GET]
+  [4;36;1mPost Load (2.3ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNewspaper Load (0.8ms)[0m   [0mSELECT * FROM "newspapers" [0m
+  [4;36;1mArticle Load (0.9ms)[0m   [0;1mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (10.6ms)
+Rendered home/_tabsheader (0.1ms)
+Rendered newspapers/_latest (1.4ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 113ms (View: 87, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:27:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:27:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:29:37) [GET]
+  [4;35;1mPost Load (3.2ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNewspaper Load (0.8ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+  [4;35;1mArticle Load (0.9ms)[0m   [0mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (24.0ms)
+Rendered home/_tabsheader (0.1ms)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 9) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+Rendered newspapers/_latest (9.5ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 85ms (View: 55, DB: 8) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:29:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:29:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:29:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:29:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:29:58) [GET]
+  [4;36;1mPost Load (2.8ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNewspaper Load (1.2ms)[0m   [0mSELECT * FROM "newspapers" [0m
+  [4;36;1mArticle Load (0.9ms)[0m   [0;1mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (11.8ms)
+Rendered home/_tabsheader (0.1ms)
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 9) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+Rendered newspapers/_latest (11.8ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 63ms (View: 28, DB: 9) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:29:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:29:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:31:06) [GET]
+  [4;35;1mPost Load (2.3ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNewspaper Load (0.7ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+  [4;35;1mArticle Load (0.9ms)[0m   [0mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (10.9ms)
+Rendered home/_tabsheader (0.1ms)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 9) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+Rendered newspapers/_latest (10.8ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 137ms (View: 107, DB: 8) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:31:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:31:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:31:10) [GET]
+  [4;36;1mPost Load (2.3ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNewspaper Load (0.9ms)[0m   [0mSELECT * FROM "newspapers" [0m
+  [4;36;1mArticle Load (1.1ms)[0m   [0;1mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (11.3ms)
+Rendered home/_tabsheader (0.1ms)
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 9) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+Rendered newspapers/_latest (9.2ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 54ms (View: 21, DB: 8) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:31:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:31:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:32:05) [GET]
+  [4;35;1mPost Load (2.3ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNewspaper Load (0.7ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+  [4;35;1mArticle Load (0.9ms)[0m   [0mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (10.3ms)
+Rendered home/_tabsheader (0.1ms)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 9) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+Rendered newspapers/_latest (10.5ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 121ms (View: 91, DB: 8) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:32:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:32:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:33:04) [GET]
+  [4;36;1mPost Load (2.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNewspaper Load (0.8ms)[0m   [0mSELECT * FROM "newspapers" [0m
+  [4;36;1mArticle Load (0.9ms)[0m   [0;1mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (12.1ms)
+Rendered home/_tabsheader (0.1ms)
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 9) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+Rendered newspapers/_latest (24.0ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 73ms (View: 40, DB: 8) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:33:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:33:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:33:35) [GET]
+  [4;35;1mPost Load (2.4ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNewspaper Load (0.8ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+  [4;35;1mArticle Load (0.9ms)[0m   [0mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (10.7ms)
+Rendered home/_tabsheader (0.1ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 9) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+Rendered newspapers/_latest (9.5ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 52ms (View: 24, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:33:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:33:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:34:23) [GET]
+  [4;36;1mPost Load (2.3ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNewspaper Load (0.8ms)[0m   [0mSELECT * FROM "newspapers" [0m
+  [4;36;1mArticle Load (0.9ms)[0m   [0;1mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (10.9ms)
+Rendered home/_tabsheader (0.1ms)
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 9) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+Rendered newspapers/_latest (9.5ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 57ms (View: 29, DB: 7) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:34:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:34:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:35:26) [GET]
+  [4;35;1mPost Load (2.4ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNewspaper Load (0.7ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+  [4;35;1mArticle Load (1.1ms)[0m   [0mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (24.1ms)
+Rendered home/_tabsheader (0.1ms)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 9) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+Rendered newspapers/_latest (10.1ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 71ms (View: 38, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:35:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:35:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:35:37) [GET]
+  [4;36;1mPost Load (3.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNewspaper Load (1.0ms)[0m   [0mSELECT * FROM "newspapers" [0m
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (11.3ms)
+Rendered home/_tabsheader (0.1ms)
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 9) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+Rendered newspapers/_latest (9.5ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 128ms (View: 91, DB: 8) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:35:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:35:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:38:40) [GET]
+  [4;35;1mPost Load (2.2ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNewspaper Load (0.7ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+  [4;35;1mArticle Load (0.9ms)[0m   [0mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (10.8ms)
+Rendered home/_tabsheader (0.1ms)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 9) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+Rendered newspapers/_latest (10.1ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 63ms (View: 35, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:38:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:38:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:39:21) [GET]
+  [4;36;1mPost Load (2.2ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNewspaper Load (0.7ms)[0m   [0mSELECT * FROM "newspapers" [0m
+  [4;36;1mArticle Load (0.9ms)[0m   [0;1mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (11.1ms)
+Rendered home/_tabsheader (0.1ms)
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 9) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+Rendered newspapers/_latest (9.5ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 207ms (View: 103, DB: 7) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:39:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:39:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:39:51) [GET]
+  [4;35;1mPost Load (2.4ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNewspaper Load (1.2ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+  [4;35;1mArticle Load (1.4ms)[0m   [0mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (11.8ms)
+Rendered home/_tabsheader (0.1ms)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 9) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+Rendered newspapers/_latest (8.3ms)
+Rendered home/_sponsors (0.5ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 60ms (View: 26, DB: 8) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:39:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:39:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:41:18) [GET]
+  [4;36;1mPost Load (2.3ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNewspaper Load (0.7ms)[0m   [0mSELECT * FROM "newspapers" [0m
+  [4;36;1mArticle Load (0.9ms)[0m   [0;1mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (30.0ms)
+Rendered home/_tabsheader (0.1ms)
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 9) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+Rendered newspapers/_latest (8.0ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 93ms (View: 64, DB: 7) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:41:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.7ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:41:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:42:39) [GET]
+  [4;35;1mPost Load (2.4ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mNewspaper Load (1.0ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (11.2ms)
+Rendered home/_tabsheader (0.1ms)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 9) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+Rendered newspapers/_latest (24.7ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 92ms (View: 63, DB: 8) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:42:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:42:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-31 00:44:01) [GET]
+  [4;36;1mPost Load (2.5ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mNewspaper Load (0.9ms)[0m   [0mSELECT * FROM "newspapers" [0m
+  [4;36;1mArticle Load (1.3ms)[0m   [0;1mSELECT "articles".* FROM "articles" WHERE ("articles".newspaper_id IN (1,2,3,4,5,6,7,8,9,10)) [0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (12.2ms)
+Rendered home/_tabsheader (0.1ms)
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 9) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 10) [0m
+Rendered newspapers/_latest (8.6ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Completed in 77ms (View: 44, DB: 8) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:44:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-31 00:44:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

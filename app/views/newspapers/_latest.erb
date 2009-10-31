@@ -1,0 +1,16 @@
+<h3>Latest Irish News:</h3>
+<ul id="nav-secondary">
+  <% count = 0 %>
+  <% @news.each do |n| %>
+    <% count = count + 1 %>
+    <li class="active <% if count == 1 %>first <% end %>"><a href="#"><%= n.name %></a>
+      <% if n.articles.count > 0 %>
+        <ul>
+          <% n.articles.each do |article| -%>
+          <li><a target="_blank" href="<%= article.url %>"><%= article.title %></a></li>
+          <% end %>
+        </ul>
+      <% end %>
+    </li>
+  <% end %>
+</ul>

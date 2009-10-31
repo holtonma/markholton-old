@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @newspaper.name %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @newspaper.url %>
+</p>
+
+<p>
+  <b>Ranking:</b>
+  <%=h @newspaper.ranking %>
+</p>
+
+
+<%= link_to 'Edit', edit_newspaper_path(@newspaper) %> |
+<%= link_to 'Back', newspapers_path %>

@@ -1,0 +1,28 @@
+<h1>Editing article</h1>
+
+<% form_for(@article) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :newspaper_id %><br />
+    <%= f.text_field :newspaper_id %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.label :printed_date %><br />
+    <%= f.datetime_select :printed_date %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @article %> |
+<%= link_to 'Back', articles_path %>

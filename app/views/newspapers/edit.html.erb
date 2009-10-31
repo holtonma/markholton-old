@@ -1,0 +1,24 @@
+<h1>Editing newspaper</h1>
+
+<% form_for(@newspaper) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.label :ranking %><br />
+    <%= f.text_field :ranking %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @newspaper %> |
+<%= link_to 'Back', newspapers_path %>

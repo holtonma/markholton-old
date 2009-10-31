@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  newspaper_id: 1
+  title: MyString
+  url: MyString
+  printed_date: 2009-10-30 23:41:01
+
+two:
+  newspaper_id: 1
+  title: MyString
+  url: MyString
+  printed_date: 2009-10-30 23:41:01

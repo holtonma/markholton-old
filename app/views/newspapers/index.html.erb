@@ -1,0 +1,24 @@
+<h1>Listing newspapers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Url</th>
+    <th>Ranking</th>
+  </tr>
+
+<% @newspapers.each do |newspaper| %>
+  <tr>
+    <td><%=h newspaper.name %></td>
+    <td><%=h newspaper.url %></td>
+    <td><%=h newspaper.ranking %></td>
+    <td><%= link_to 'Show', newspaper %></td>
+    <td><%= link_to 'Edit', edit_newspaper_path(newspaper) %></td>
+    <td><%= link_to 'Destroy', newspaper, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New newspaper', new_newspaper_path %>

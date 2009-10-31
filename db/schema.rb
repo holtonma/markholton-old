@@ -9,7 +9,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091031015034) do
+ActiveRecord::Schema.define(:version => 20091031070527) do
+
+  create_table "articles", :force => true do |t|
+    t.integer  "newspaper_id"
+    t.string   "title"
+    t.string   "url"
+    t.datetime "printed_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.text     "content"
+  end
 
   create_table "comments", :force => true do |t|
     t.string   "commenter"
@@ -17,6 +27,14 @@ ActiveRecord::Schema.define(:version => 20091031015034) do
     t.integer  "post_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "newspapers", :force => true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "ranking"
   end
 
   create_table "posts", :force => true do |t|
