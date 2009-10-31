@@ -14,7 +14,7 @@ development:
   database: IrishOptimist_development
   pool: 5
   username: IrishOptimist
-  password:
+  password: scramjet
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -40,7 +40,7 @@ test:
   database: IrishOptimist_test
   pool: 5
   username: IrishOptimist
-  password:
+  password: scramjet
 
 production:
   adapter: postgresql
@@ -48,4 +48,4 @@ production:
   database: IrishOptimist_production
   pool: 5
   username: IrishOptimist
-  password:
+  password: scramjet
