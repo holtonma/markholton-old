@@ -1,29 +1,12 @@
-<p>
-  <b>Name:</b>
-  <%=h @post.name %>
-</p>
 
-<p>
-  <b>Title:</b>
-  <%=h @post.title %>
-</p>
+<h2><%=h @post.title %></h2>
+<div>by: <%=h @post.name %></div>
+<p><%= @post.content %></p>
 
-<p>
-  <b>Content:</b>
-  <%= @post.content %>
-</p>
-
-
-<h2>Comments</h2>
+<h3>Comments</h3>
 <% @post.comments.each do |c| %>
   <p>
-    <b>Commenter:</b>
-    <%=h c.commenter %>
-  </p>
-
-  <p>
-    <b>Comment:</b>
-    <%=h c.body %>
+    <b><%=h c.commenter %>:</b> <%=h c.body %>
   </p>
 <% end %>
 
