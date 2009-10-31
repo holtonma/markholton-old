@@ -2,8 +2,8 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.xml
   def index
-    @articles = Article.all
-
+    @articles = Article.find(:all, :include => [:newspaper], :order => "printed_date DESC")
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @articles }

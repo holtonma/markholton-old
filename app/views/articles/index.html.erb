@@ -1,26 +1,12 @@
 <h1>Listing articles</h1>
 
-<table>
-  <tr>
-    <th>Newspaper</th>
-    <th>Title</th>
-    <th>Url</th>
-    <th>Printed date</th>
-  </tr>
 
 <% @articles.each do |article| %>
-  <tr>
-    <td><%=h article.newspaper_id %></td>
-    <td><%=h article.title %></td>
-    <td><%=h article.url %></td>
-    <td><%=h article.printed_date %></td>
-    <td><%= link_to 'Show', article %></td>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-    <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+  <h3><a target="_blank" href="<%= article.url %>"><%= article.title %></a></h3>
+  <p>printed:<i><%= distance_of_time_in_words(article.printed_date, Time.now) %> ago</i></p>
+  <p><%= article.content %></p>
+  <div><%= link_to 'Show', article %> | <%= link_to 'Edit', edit_article_path(article) %> | <%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></div>
+  <hr>
 <% end %>
-</table>
 
-<br />
-
-<%= link_to 'New article', new_article_path %>
+<%# link_to 'New article', new_article_path %>
