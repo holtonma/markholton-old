@@ -5,13 +5,15 @@
     <i>created <%= distance_of_time_in_words(post.created_at, Time.now) %> ago</i>
   </div> 
   <div><%= post.content %></div>
+  <!--
   <div>
-    <%= link_to 'Show', post %> | 
-    <%= link_to 'Edit', edit_post_path(post) %> |
-    <%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %>
+    <%# link_to 'Show', post %> | 
+    <%# link_to 'Edit', edit_post_path(post) %> |
+    <%# link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %>
   </div>
+  -->
   <hr>
 <% end %>
 
 
-<%= link_to 'New post', new_post_path %>
+<%# link_to 'New post', new_post_path %>

@@ -4,8 +4,14 @@
 <% @articles.each do |article| %>
   <h3><a target="_blank" href="<%= article.url %>"><%= article.title %></a></h3>
   <p>printed:<i><%= distance_of_time_in_words(article.printed_date, Time.now) %> ago</i></p>
-  <p><%= article.content %></p>
-  <div><%= link_to 'Show', article %> | <%= link_to 'Edit', edit_article_path(article) %> | <%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></div>
+  <p><%= article.content %> <a target="_blank" href="<%= article.url %>">click to continue reading</a></p>
+  <!--
+  <div>
+    <%# link_to 'Show', article %> | 
+    <%# link_to 'Edit', edit_article_path(article) %> | 
+    <%# link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %>
+  </div>
+  -->
   <hr>
 <% end %>
 
