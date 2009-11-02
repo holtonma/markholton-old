@@ -1,0 +1,8 @@
+<h1>Listing articles</h1>
+
+
+<% @articles.each do |article| %>
+  <h3><a target="_blank" href="<%= article.url %>"><%= article.title %></a></h3>
+  <p>printed:<i><%= distance_of_time_in_words(article.printed_date, Time.now) %> ago</i></p>
+<% end %>
+

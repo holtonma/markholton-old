@@ -1,12 +1,15 @@
 class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.xml
+  acts_as_iphone_controller
+  
   def index
     @articles = Article.find(:all, :include => [:newspaper], :order => "printed_date DESC")
     
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @articles }
+      format.iphone # index.iphone.erb
     end
   end
 

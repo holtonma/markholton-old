@@ -3,7 +3,7 @@ class NewspapersController < ApplicationController
   # GET /newspapers.xml
   def index
     @newspapers = Newspaper.all
-
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @newspapers }

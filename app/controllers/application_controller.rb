@@ -4,7 +4,19 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
-
+ 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+  before_filter :set_iphone_format
+  
+  def is_iphone_request?
+    request.user_agent =~ /(Mobile\/.+Safari)/
+  end
+  
+  def set_iphone_format
+    if is_iphone_request?
+      request.format = :iphone
+    end
+  end
+
 end
