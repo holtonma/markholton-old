@@ -1,8 +1,44 @@
-<h1>Listing articles</h1>
+<%# iui_toolbar "Irish Optimist home", root_url %>
+       
+<!-- create the primary toolbar -->
+<div class="toolbar">
+  <h1 id="Irish Optimist : News (iPhone)"></h1>
+  <a id="backButton" class="button" href="#">Back</a>
+</div>
 
-
+<ul id="home" title="IrishOptimist Articles" selected="true">
+  <li class="group">Latest Irish News:</li>
 <% @articles.each do |article| %>
-  <h3><a target="_blank" href="<%= article.url %>"><%= article.title %></a></h3>
-  <p>printed:<i><%= distance_of_time_in_words(article.printed_date, Time.now) %> ago</i></p>
+  <li>
+    <a target="_blank" href="<%= article.url %>"><%= article.title %></a>&nbsp;
+    <span style="font-size:small;">
+      printed:<i><%= distance_of_time_in_words(article.printed_date, Time.now) %> ago</i>
+    </span>
+  </li>
 <% end %>
+  </li>
+</ul>
+
+<!---
+<ul id="home" title="iPhone Journals" selected="true">
+  <li class="group">Authentication</li>
+    <li><a href="login.php">Login</a></li>
+  <li class="group">Manage Blogs</li>
+    <li><a href="#">Create</a></li>
+    <li><a href="#">Edit</a></li>
+    <li><a href="#">Delete</a></li>
+  <li class="group">Manage Posts</li>
+    <li><a href="#">Create</a></li>
+    <li><a href="#">Edit</a></li>
+    <li><a href="#">Delete</a></li>
+    <li><a href="#">Retrieve</a></li>
+  <li class="group">Manage Comments</li>
+    <li><a href="#">Create</a></li>
+    <li><a href="#">Edit</a></li>
+    <li><a href="#">Delete</a></li>
+    <li><a href="#">Retrieve</a></li>
+  <li class="group">About</li>
+    <li><a href="about.php">About</a></li>
+</ul>
+--->
 
