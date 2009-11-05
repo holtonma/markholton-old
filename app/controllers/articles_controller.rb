@@ -4,7 +4,15 @@ class ArticlesController < ApplicationController
   acts_as_iphone_controller
   
   def index
-    @articles = Article.find(:all, :include => [:newspaper], :order => "printed_date DESC")
+    
+    if params[:q] == "" || params[:q] == nil
+      @articles = Article.find(:all, :include => [:newspaper], :order => "printed_date DESC")
+      @is_search = false
+    else
+      q = params[:q]
+      @articles = Article.search(q)
+      @is_search = true
+    end
     
     respond_to do |format|
       format.html # index.html.erb

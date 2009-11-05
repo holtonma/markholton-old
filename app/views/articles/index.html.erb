@@ -1,5 +1,10 @@
-<h1>Listing articles</h1>
 
+
+<% if @is_search %>
+<h1>Listing IrishOptimist articles containing: <b style="color:green;">'<%= params[:q] %>'</b></h1>
+<% else %>
+<h1>Listing all IrishOptimist articles</h1>
+<% end %>
 
 <% @articles.each do |article| %>
   <h3><a target="_blank" href="<%= article.url %>"><%= article.title %></a></h3>
