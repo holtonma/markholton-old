@@ -6,7 +6,8 @@
     <li class="active <% if count == 1 %>first <% end %>"><a href="#"><%= n.name %></a>
       <% if n.articles.count > 0 %>
         <ul>
-          <% n.articles.each do |article| -%>
+          <%# n.articles.each do |article| -%>
+          <% for article in n.articles[0..4] %>
           <li><a target="_blank" href="<%= article.url %>"><%= article.title %></a></li>
           <% end %>
         </ul>
