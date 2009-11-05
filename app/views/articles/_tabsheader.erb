@@ -1,13 +1,6 @@
 <div id="header">
 	<div id="site-name">Irish Optimist</div>
 	<div id="search">
-		<!-- 
-		<form action="">
-		<label for="searchsite">Site Search:</label>
-		<input id="searchsite" name="searchsite" type="text" />
-		<input type="submit" value="Go" class="f-submit" />
-		</form>
-		-->
 		<% form_tag({:action => 'index'}, :method => 'get') do |f| %>
 		  <!-- <label for="searchsite">Site Search:</label> -->
 		  <%= label_tag "searchsite", "Articles Search:" %>

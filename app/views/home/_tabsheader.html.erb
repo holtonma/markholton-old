@@ -1,13 +1,14 @@
 <div id="header">
 	<div id="site-name">Irish Optimist</div>
 	<div id="search">
-		<!-- 
-		<form action="">
-		<label for="searchsite">Site Search:</label>
-		<input id="searchsite" name="searchsite" type="text" />
-		<input type="submit" value="Go" class="f-submit" />
-		</form>
-		-->
+		<% form_tag({:controller => 'articles', :action => 'index'}, :method => 'get') do |f| %>
+		  <!-- <label for="searchsite">Site Search:</label> -->
+		  <%= label_tag "searchsite", "Articles Search:" %>
+  		<!-- <input id="searchsite" name="searchsite" type="text" /> -->
+  		<%= text_field_tag :q, h(params[:q]) %>
+  		<!-- <input type="submit" value="Go" class="f-submit" /> -->
+  		<%= submit_tag 'Go', :class => "f-submit", :name => nil %>
+    <% end %>
 	</div>
 	<ul id="nav">
 	<li class="first active"><a href="#">Home</a></li>
