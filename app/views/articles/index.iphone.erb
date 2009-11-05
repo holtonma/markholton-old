@@ -21,6 +21,7 @@
   </li>
 </ul>
 
+<%# for search popup %>
 <% form_tag({:controller => 'articles', :action => 'index'}, 
     :id =>'searchForm', :class=> 'dialog', :method => 'get') do |f| %>
   <fieldset>
@@ -28,7 +29,7 @@
     <a class="button leftButton" type="cancel">Cancel</a>
     <a class="button blueButton" type="submit">Search</a>
     <!-- <label for="searchsite">Site Search:</label> -->
-    <%= label_tag "searchsite", "Articles Search:" %>
+    <%= label_tag "searchsite", "find:" %>
 	  <!-- <input id="searchsite" name="searchsite" type="text" /> -->
 	  <%= text_field_tag :q, h(params[:q]) %>
 	  <!-- <input type="submit" value="Go" class="f-submit" /> -->
