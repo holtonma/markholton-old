@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091031070527) do
+ActiveRecord::Schema.define(:version => 20091105001110) do
 
   create_table "articles", :force => true do |t|
     t.integer  "newspaper_id"
@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(:version => 20091031070527) do
     t.datetime "updated_at"
     t.text     "content"
   end
+
+  add_index "articles", [nil], :name => "articles_fts_idx"
 
   create_table "comments", :force => true do |t|
     t.string   "commenter"

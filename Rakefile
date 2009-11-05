@@ -8,3 +8,8 @@ require 'rake/testtask'
 require 'rake/rdoctask'
 
 require 'tasks/rails'
+
+require 'rubygems'
+
+## texticle rake tasks
+require 'texticle/tasks'
