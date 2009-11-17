@@ -13,7 +13,8 @@
   </p>
   <p>
     <%= post_form.label :content %><br />
-    <%= post_form.text_area :content %>
+    <%# post_form.text_area :content %>
+    <%= textile_editor :content, 'content' -%>
   </p>
   <h2>Tags</h2>
   <% post_form.fields_for :tags do |tag_form| %>
@@ -33,3 +34,4 @@
     <%= post_form.submit "Save" %>
   </p>
 <% end %>
+<%= textile_editor_initialize -%>
