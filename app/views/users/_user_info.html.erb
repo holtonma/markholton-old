@@ -7,7 +7,6 @@
     <div><fb:profile-pic uid="<%= current_user.fb_user_id%>" facebook-logo="true" size="thumb"></fb:profile-pic></div>
     <div><strong style="color:black;"><%= current_user.name %></strong></div>
     <div align="right"><a href="#" onclick='FB.Connect.logoutAndRedirect("/logout")'>Logout</a></div>
-    <div align="right"><%= link_to 'Logout', logout_path%></div>
   <% else %>
     <p>why don't you connect with your facebook account</p>
     <%= fb_login_button('window.location = "/users/link_user_accounts";')%>
