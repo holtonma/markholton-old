@@ -6,7 +6,9 @@
   <% if current_user.facebook_user? %>
     <div><fb:profile-pic uid="<%= current_user.fb_user_id%>" facebook-logo="true" size="thumb"></fb:profile-pic></div>
     <div><strong style="color:black;"><%= current_user.name %></strong></div>
-    <div align="right">js: <a href="#" onclick='FB.Connect.logoutAndRedirect("/logout")'>Logout</a></div>
+    <%# following works for facebook login: %>
+    <div align="right">js: <a id="logout_link" href="#" onclick='FB.Connect.logoutAndRedirect("/logout")'>Logout</a></div>
+    <%# following works for regular restful login: %>
     <div align="right">logout_path: <%= link_to 'Logout', logout_path%></div>
   <% else %>
     <p>why don't you connect with your facebook account</p>
