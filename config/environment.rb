@@ -35,7 +35,7 @@ Rails::Initializer.run do |config|
   # Run "rake -D time" for a list of tasks for finding time zone names.
   config.time_zone = 'UTC'
   config.gem 'texticle'
-  config.gem 'ezcrypto'
+  #config.gem 'ezcrypto'
   # config.gem 'twitter-auth', :lib => 'twitter_auth'
   
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
