@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  include AuthenticatedSystem
+  
   def index
     @posts = Post.find(:all, :include => [:comments], :order => 'posts.updated_at DESC')
     @news = Newspaper.find(:all, :include => [:articles], :order => "articles.printed_date DESC")

@@ -6,6 +6,7 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <meta name="google-site-verification" content="mLSiiegGsMcM15ubexd5bT_m0S8_p2YgUQ5DEZ-hcbI" />
   <title>IrishOptimist: News and Opinions from Optimistic Fighting Irish Fans</title>
+  <%= javascript_include_tag :defaults%>
   <%= stylesheet_link_tag 'main' %>
   <%# stylesheet_link_tag 'print' %>
   <!--[if lte IE 6]>
@@ -14,6 +15,8 @@
 </head>
 
 <body id="type-c">
+<%= fb_connect_javascript_tag %>
+<%= init_fb_connect "XFBML"%>
 <div id="wrap">
   <%= render :partial => "tabsheader" %>
 	
@@ -33,7 +36,8 @@
 		</div>
 		
 		<div id="sidebar">
-			<div class="featurebox"><%= render :partial => "sponsors" %></div>
+			<div class="featurebox"><%= render :partial => "users/user_info" %></div>
+      <div class="featurebox"><%= render :partial => "sponsors" %></div>
 			<div class="featurebox"><%= render :partial => "schedule_2009" %></div>
 		</div>
 		

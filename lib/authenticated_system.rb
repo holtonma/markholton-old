@@ -6,10 +6,10 @@ module AuthenticatedSystem
       !!current_user
     end
 
-    # Accesses the current user from the session.
+    # Accesses the current user from the session, or from Facebook
     # Future calls avoid the database because nil is not equal to false.
     def current_user
-      @current_user ||= (login_from_session || login_from_basic_auth || login_from_cookie) unless @current_user == false
+      @current_user ||= (login_from_session || login_from_basic_auth || login_from_cookie || login_from_fb) unless @current_user == false
     end
 
     # Store the given user id in the session.
@@ -129,7 +129,14 @@ module AuthenticatedSystem
         self.current_user
       end
     end
-
+    
+    # handles facebook login
+    def login_from_fb
+      if facebook_session
+        self.current_user = User.find_by_fb_user(facebook_session.user)
+      end
+    end
+    
     # This is ususally what you want; resetting the session willy-nilly wreaks
     # havoc with forgery protection, and is only strictly necessary on login.
     # However, **all session state variables should be unset here**.

@@ -1,0 +1,28 @@
+
+
+<% form_tag session_path do -%>
+
+<table>
+  <thead></thead>
+  <tbody>
+    <tr>
+      <td>Login:</td><td><%= text_field_tag 'login', @login %></td>
+    </tr>
+    <tr>
+      <td>Password:</td><td><%= password_field_tag 'password', nil %></td>
+    </tr>
+  </tbody>
+</table>
+<div align="center">Remember me? <%= check_box_tag 'remember_me', '1', @remember_me %></div>
+<div align="center"><%= submit_tag 'Log in' %></div>
+
+<div align="center">or login with Facebook Connect!
+  <%= fb_login_button('window.location = "/users/link_user_accounts";')%>
+</div>
+
+
+<% end -%>
+
+
+
+
