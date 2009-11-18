@@ -10,5 +10,6 @@ class HomeController < ApplicationController
       format.xml  { render :xml => @posts }
     end
   end
-
+  
+  
 end

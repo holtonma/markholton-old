@@ -6,7 +6,8 @@ class SessionsController < ApplicationController
   # render new.rhtml
   def new
   end
-
+  
+  
   def create
     logout_keeping_session!
     user = User.authenticate(params[:login], params[:password])
