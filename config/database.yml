@@ -11,9 +11,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: IrishOptimist_development
+  database: MarkHolton_development
   pool: 5
-  username: IrishOptimist
+  username: MarkHolton
   password: scramjet
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -37,15 +37,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: IrishOptimist_test
+  database: MarkHolton_test
   pool: 5
-  username: IrishOptimist
+  username: MarkHolton
   password: scramjet
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: IrishOptimist_production
+  database: MarkHolton_production
   pool: 5
-  username: IrishOptimist
+  username: MarkHolton
   password: scramjet

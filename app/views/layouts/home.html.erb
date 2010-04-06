@@ -5,7 +5,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <meta name="google-site-verification" content="mLSiiegGsMcM15ubexd5bT_m0S8_p2YgUQ5DEZ-hcbI" />
-  <title>IrishOptimist: News and Opinions from Optimistic Fighting Irish Fans</title>
+  <title>Mark Holton : web application development</title>
   <%= javascript_include_tag :defaults%>
   <%= stylesheet_link_tag 'main' %>
   <%# stylesheet_link_tag 'print' %>
@@ -28,15 +28,17 @@
   	  <%= yield %>
       
 			<div id="footer">
-			  <p>
-			    IrishOptimist.com is not affiliated with, sponsored by, or endorsed by the University of Notre Dame. 
-			    Copyright &copy; <%= Time.now.year %> IrishOptimist.com, All rights reserved</p>
-			  <p>Contact Us: ndirishoptimist (at) gmail (dot) com</p>
+			  <p>I am a software engineer from Seattle, WA. A lot of my work is inside the firewall at corporations in the Fortune 100.  But I also experiment with Ruby, Rails, Memcache, PostgreSQL, Cassandra, iPhone web development and other technologies at sites like EyeOnMajors.com</p>
+
+        <p>
+          You can follow me at Facebook, and Twitter (@MarkHolton) or just email me at holtonma (at) gmail.com. 
+			    Copyright &copy; <%= Time.now.year %> MarkHolton.com, All rights reserved
+			  </p>
 			</div>
 		</div>
 		
 		<div id="sidebar">
-			<div class="featurebox"><%= render :partial => "users/user_info" %></div>
+			<!-- <div class="featurebox"><%# render :partial => "users/user_info" %></div> -->
       <div class="featurebox"><%= render :partial => "sponsors" %></div>
 			<div class="featurebox"><%= render :partial => "schedule_2009" %></div>
 		</div>

@@ -1,5 +1,5 @@
 <div id="header">
-	<div id="site-name">Irish Optimist</div>
+	<div id="site-name">MarkHolton.com</div>
 	<div id="search">
 		<% form_tag({:controller => 'articles', :action => 'index'}, :method => 'get') do |f| %>
 		  <span>
@@ -13,16 +13,16 @@
     <% end %>
 	</div>
 	<ul id="nav">
-	<li class="first active"><a href="#">Home</a></li>
-	<li><%= link_to 'Irish Football News', articles_path %></a>
+	<li class="first active"><a href="#">Blog</a></li>
+	<li><%= link_to 'Interesting Software News', articles_path %></a>
 	  <ul>
-		  <li class="first"><a href="/articles?q=Weis">Charlie Weis</a></li>
-		  <li><a href="/articles?q=Clausen">Jimmy Clausen</a></li>
-		  <li><a href="/articles?q=Tate">Golden Tate</a></li>
-      <li><a href="/articles?q=Manti">Manti Te'o</a></li>
-      <li><a href="/articles?q=recruit">Recruiting</a></li>
+		  <li class="first"><a href="/articles?q=Rails">Rails</a></li>
+		  <li><a href="/articles?q=Javascript">Javascript</a></li>
+		  <li><a href="/articles?q=Cassandra">Cassandra</a></li>
+      <li><a href="/articles?q=Heroku">Heroku</a></li>
+      <li><a href="/articles?q=Nokogiri">Nokogiri</a></li>
 		</ul>
 	</li>
-	<!-- <li class=""><a href="#">Posts</a></li> -->
+	
 	</ul>
 </div>
