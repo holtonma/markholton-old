@@ -15,8 +15,8 @@
 </head>
 
 <body id="type-c">
-<%= fb_connect_javascript_tag %>
-<%= init_fb_connect "XFBML"%>
+<%# fb_connect_javascript_tag %>
+<%# init_fb_connect "XFBML"%>
 <div id="wrap">
   <%= render :partial => "tabsheader" %>
 	
@@ -25,6 +25,7 @@
       
 		<div id="content">
 		  <p style="color: green"><%= flash[:notice] %></p>
+		  
   	  <%= yield %>
       
 			<div id="footer">
@@ -35,7 +36,7 @@
 			    Copyright &copy; <%= Time.now.year %> MarkHolton.com, All rights reserved
 			  </p>
 			</div>
-		</div>
+		</div> <!-- end content-->
 		
 		<div id="sidebar">
 			<!-- <div class="featurebox"><%# render :partial => "users/user_info" %></div> -->
@@ -44,7 +45,7 @@
 		</div>
 		
     <div id="poweredby">
-      <a href="http://www.IrishOptimist.com/"><%= image_tag("optimist.png", :alt => "IrishOptimist.com") %></a>
+      <a href="http://www.MarkHolton.com/"><%= image_tag("optimist.png", :alt => "MarkHolton.com") %></a>
     </div>
 	</div> <!-- end content-wrap -->
 </div> <!-- end wrap -->
