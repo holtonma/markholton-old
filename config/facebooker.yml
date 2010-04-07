@@ -39,7 +39,7 @@ production:
   api_key: e1f656918eb1f2a54724f3721ac13c5b
   secret_key: 0fb7d06134b35018cdf2234372404d67
   canvas_page_name: 
-  callback_url: http://irishoptimist.com/
+  callback_url: http://markholton.com/
   set_asset_host_to_callback_url: true   
   tunnel:
     public_host_username: 
