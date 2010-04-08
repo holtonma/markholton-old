@@ -342,7 +342,7 @@ ul#follow li {
   -webkit-border-radius: 10px;
   
   border:4px solid; /*#DDD*/
-  border-color: rgba(220, 220, 220, 0.05);
+  border-color: rgba(220, 220, 220, 0.1);
   height: 3em;
   margin: 2px 3px;
   padding: 3px 0px;
