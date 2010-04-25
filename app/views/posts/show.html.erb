@@ -14,6 +14,9 @@
   </p>
 <% end %>
 
-<%= link_to 'Edit Post', edit_post_path(@post) %> |
-<%= link_to 'Back to Posts', posts_path %> |
-<%= link_to 'Manage Comments', post_comments_path(@post) %>
+<% if logged_in? && current_user.email == "holtonma@gmail.com"%>
+<%# if @user.id == 1%>
+  <%= link_to 'Edit Post', edit_post_path(@post) %> |
+  <%= link_to 'Back to Posts', posts_path %> |
+  <%= link_to 'Manage Comments', post_comments_path(@post) %>
+<% end %>

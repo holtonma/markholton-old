@@ -1,4 +1,8 @@
 class PostsController < ApplicationController
+  include AuthenticatedSystem
+  
+  layout "home"
+  
   before_filter :find_post,
     :only => [:show, :edit, :update, :destroy]
     
@@ -6,7 +10,8 @@ class PostsController < ApplicationController
   # GET /posts.xml
   def index
     @posts = Post.all(:order => 'updated_at DESC')
-
+    @news = Newspaper.find(:all, :include => [:articles], :order => "articles.printed_date DESC")
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @posts }
@@ -16,6 +21,8 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.xml
   def show
+    @user = current_user 
+    @news = Newspaper.find(:all, :include => [:articles], :order => "articles.printed_date DESC")
     
     respond_to do |format|
       format.html # show.html.erb
@@ -27,7 +34,7 @@ class PostsController < ApplicationController
   # GET /posts/new.xml
   def new
     @post = Post.new
-
+    @news = []
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @post }
