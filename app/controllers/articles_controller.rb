@@ -48,6 +48,9 @@ class ArticlesController < ApplicationController
   # GET /articles/1/edit
   def edit
     @article = Article.find(params[:id])
+    @newspapers = Newspaper.find(:all)
+    @news = Newspaper.find(:all, :include => [:articles], :order => "articles.printed_date DESC")
+    
   end
 
   # POST /articles
