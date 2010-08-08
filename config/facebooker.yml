@@ -12,7 +12,7 @@ development:
   api_key: ba7e2934c968872b698dd1513db970ad
   secret_key: bc2da85c47dbd9902309d5c40cc20117
   canvas_page_name:
-  callback_url: http://localhost:2001/
+  #callback_url: http://localhost:2001/
   pretty_errors: true
   set_asset_host_to_callback_url: true
   tunnel:
