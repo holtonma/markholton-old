@@ -14,7 +14,7 @@
   <p>
     <%= post_form.label :content %><br />
     <%# post_form.text_area :content %>
-    <%= textile_editor :content, 'content' -%>
+    <%= post_form.text_area :content -%>
   </p>
   <h2>Tags</h2>
   <% post_form.fields_for :tags do |tag_form| %>
@@ -24,8 +24,8 @@
     </p>
     <% unless tag_form.object.nil? || tag_form.object.new_record? %>
       <p>
-        <%= tag_form.label :_delete, 'Remove:' %>
-        <%= tag_form.check_box :_delete %>
+        <%# tag_form.label :_delete, 'Remove:' %>
+        <%# tag_form.check_box :_delete %>
       </p>
     <% end %>
   <% end %>
@@ -33,5 +33,6 @@
   <p>
     <%= post_form.submit "Save" %>
   </p>
+  
 <% end %>
-<%= textile_editor_initialize -%>
+<%# textile_editor_initialize -%>

@@ -13203,3 +13203,1505 @@ ActionController::RoutingError (No route matches "/stylesheets/images/featurebox
   
 
 Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-07 23:06:39) [GET]
+  [4;36;1mPost Load (2.3ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY posts.updated_at DESC[0m
+  [4;35;1mComment Load (0.6ms)[0m   [0mSELECT "comments".* FROM "comments" WHERE ("comments".post_id IN (6,5,4,3,2,1)) [0m
+  [4;36;1mNewspaper Load Including Associations (1.0ms)[0m   [0;1mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (5.9ms)
+Rendered home/_tabsheader (1.2ms)
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+Rendered newspapers/_latest (9.6ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 53ms (View: 19, DB: 6) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:06:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:06:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:06:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-08-07 23:06:47) [GET]
+Rendering template within layouts/home
+Rendering posts/new
+Rendered posts/_form (11.5ms)
+Rendered home/_tabsheader (1.0ms)
+Rendered newspapers/_latest (0.1ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 27ms (View: 17, DB: 0) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:06:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:06:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:06:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-07 23:08:14) [GET]
+  [4;35;1mPost Load (2.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY posts.updated_at DESC[0m
+  [4;36;1mComment Load (0.6ms)[0m   [0;1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id IN (6,5,4,3,2,1)) [0m
+  [4;35;1mNewspaper Load Including Associations (1.1ms)[0m   [0mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (5.6ms)
+Rendered home/_tabsheader (1.0ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+Rendered newspapers/_latest (9.4ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 51ms (View: 19, DB: 6) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:08:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:08:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:08:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-07 23:10:36) [GET]
+
+NoMethodError (undefined method `acts_as_textiled' for #<Class:0x1036dc488>):
+  app/models/post.rb:10
+  app/controllers/home_controller.rb:7:in `index'
+
+Rendered rescues/_trace (37.2ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-07 23:11:02) [GET]
+  [4;35;1mPost Load (2.1ms)[0m   [0mSELECT * FROM "posts" ORDER BY posts.updated_at DESC[0m
+  [4;36;1mComment Load (0.7ms)[0m   [0;1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id IN (6,5,4,3,2,1)) [0m
+  [4;35;1mNewspaper Load Including Associations (1.1ms)[0m   [0mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering home/index
+Rendered posts/_posts (58.5ms)
+Rendered home/_tabsheader (2.6ms)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+Rendered newspapers/_latest (10.5ms)
+Rendered home/_sponsors (0.5ms)
+Rendered home/_schedule_2009 (0.6ms)
+Rendered shared/_analytics (0.6ms)
+Completed in 217ms (View: 173, DB: 6) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:11:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:11:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:11:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-08-07 23:11:09) [GET]
+Rendering template within layouts/home
+Rendering posts/new
+Rendered posts/_form (13.6ms)
+Rendered home/_tabsheader (1.0ms)
+Rendered newspapers/_latest (0.1ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 37ms (View: 26, DB: 0) | 200 OK [http://localhost/posts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:11:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:11:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-08-07 23:12:31) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"tags_attributes"=>{"0"=>{"name"=>"test"}}, "name"=>"mark htest", "title"=>"testing"}, "authenticity_token"=>"AyX79bBl7V3wO+IGRPyuz/FL0jSFTEzjtCYAbu6mwIk=", "content"=>{"content"=>"*asdfasdf*\r\n\r\nh1. asdfasdfasdf\r\n\r\np. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,\r\n\r\np. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\n # 1 foo\r\n # 2 bar\r\n # 3 baz\r\n\r\n\r\n"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO "posts" ("name", "created_at", "title", "updated_at", "content") VALUES('mark htest', '2010-08-08 06:12:31.366280', 'testing', '2010-08-08 06:12:31.366280', NULL) RETURNING "id"[0m
+  [4;35;1mSQL (36.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at", "post_id") VALUES('test', '2010-08-08 06:12:31.372861', '2010-08-08 06:12:31.372861', 7) RETURNING "id"[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:2009/posts/7
+Completed in 66ms (DB: 38) | 302 Found [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-08-07 23:12:31) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 7) [0m
+  [4;35;1mNewspaper Load Including Associations (1.4ms)[0m   [0mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering posts/show
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 7) [0m
+Rendered home/_tabsheader (1.2ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+Rendered newspapers/_latest (11.3ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 52ms (View: 25, DB: 5) | 200 OK [http://localhost/posts/7]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:12:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:12:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:12:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-08-07 23:12:37) [GET]
+Rendering template within layouts/home
+Rendering posts/new
+Rendered posts/_form (11.5ms)
+Rendered home/_tabsheader (1.0ms)
+Rendered newspapers/_latest (0.1ms)
+Rendered home/_sponsors (0.0ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 27ms (View: 17, DB: 0) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:12:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:12:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:12:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-08-07 23:12:42) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"tags_attributes"=>{"0"=>{"name"=>"test"}}, "name"=>"mark htest", "title"=>"testing"}, "authenticity_token"=>"AyX79bBl7V3wO+IGRPyuz/FL0jSFTEzjtCYAbu6mwIk=", "content"=>{"content"=>"*asdfasdf*\r\n\r\nh1. asdfasdfasdf\r\n\r\np. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,\r\n\r\np. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\n # 1 foo\r\n # 2 bar\r\n # 3 baz\r\n\r\n\r\n"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO "posts" ("name", "created_at", "title", "updated_at", "content") VALUES('mark htest', '2010-08-08 06:12:42.068962', 'testing', '2010-08-08 06:12:42.068962', NULL) RETURNING "id"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at", "post_id") VALUES('test', '2010-08-08 06:12:42.074873', '2010-08-08 06:12:42.074873', 8) RETURNING "id"[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:2009/posts/8
+Completed in 28ms (DB: 2) | 302 Found [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-08-07 23:12:42) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 8) [0m
+  [4;35;1mNewspaper Load Including Associations (1.3ms)[0m   [0mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering posts/show
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 8) [0m
+Rendered home/_tabsheader (1.1ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+Rendered newspapers/_latest (14.9ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 51ms (View: 23, DB: 6) | 200 OK [http://localhost/posts/8]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:12:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:12:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:12:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-08-07 23:12:53) [GET]
+  [4;35;1mPost Load (2.0ms)[0m   [0mSELECT * FROM "posts" ORDER BY updated_at DESC[0m
+  [4;36;1mNewspaper Load Including Associations (1.0ms)[0m   [0;1mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering posts/index
+Rendered home/_tabsheader (1.0ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+Rendered newspapers/_latest (9.1ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 79ms (View: 53, DB: 5) | 200 OK [http://localhost/posts/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:12:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:12:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:12:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-08-07 23:12:57) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 9) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=9):
+  app/controllers/posts_controller.rb:96:in `find_post'
+
+Rendered rescues/_trace (34.5ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-08-07 23:13:00) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 8) [0m
+  [4;36;1mNewspaper Load Including Associations (1.2ms)[0m   [0;1mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering posts/show
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 8) [0m
+Rendered home/_tabsheader (1.2ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+Rendered newspapers/_latest (9.6ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 120ms (View: 20, DB: 4) | 200 OK [http://localhost/posts/8]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:13:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:13:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2010-08-07 23:13:03) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 8) [0m
+  [4;36;1mNewspaper Load (0.5ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+  [4;35;1mNewspaper Load Including Associations (1.1ms)[0m   [0mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering posts/edit
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tags" WHERE ("tags".post_id = 8) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".post_id = 8) [0m
+
+ActionView::TemplateError (undefined method `_delete' for #<Tag:0x1039e2e48>) on line #28 of app/views/posts/_form.html.erb:
+25:     <% unless tag_form.object.nil? || tag_form.object.new_record? %>
+26:       <p>
+27:         <%= tag_form.label :_delete, 'Remove:' %>
+28:         <%= tag_form.check_box :_delete %>
+29:       </p>
+30:     <% end %>
+31:   <% end %>
+
+    app/views/posts/_form.html.erb:28
+    app/views/posts/_form.html.erb:20
+    app/views/posts/_form.html.erb:3
+    app/views/posts/edit.html.erb:3
+
+Rendered rescues/_trace (60.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-08-07 23:16:25) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 8) [0m
+  [4;36;1mNewspaper Load Including Associations (1.4ms)[0m   [0;1mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering posts/show
+  [4;35;1mComment Load (0.6ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 8) [0m
+Rendered home/_tabsheader (1.1ms)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+Rendered newspapers/_latest (9.7ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 50ms (View: 21, DB: 5) | 200 OK [http://localhost/posts/8/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:16:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:16:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-08-07 23:33:09) [GET]
+Rendering template within layouts/home
+Rendering posts/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x1034b0c90>) on line #17 of app/views/posts/_form.html.erb:
+14:   <p>
+15:     <%= post_form.label :content %><br />
+16:     <%# post_form.text_area :content %>
+17:     <%= textile_editor f.text_field :content, 'content' -%>
+18:   </p>
+19:   <h2>Tags</h2>
+20:   <% post_form.fields_for :tags do |tag_form| %>
+
+    app/views/posts/_form.html.erb:17
+    app/views/posts/_form.html.erb:3
+    app/views/posts/new.html.erb:3
+    app/controllers/posts_controller.rb:38:in `new'
+
+Rendered rescues/_trace (50.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-08-07 23:33:20) [GET]
+Rendering template within layouts/home
+Rendering posts/new
+
+ActionView::TemplateError (undefined method `merge' for "content":String) on line #17 of app/views/posts/_form.html.erb:
+14:   <p>
+15:     <%= post_form.label :content %><br />
+16:     <%# post_form.text_area :content %>
+17:     <%= textile_editor post_form.text_field :content, 'content' -%>
+18:   </p>
+19:   <h2>Tags</h2>
+20:   <% post_form.fields_for :tags do |tag_form| %>
+
+    app/views/posts/_form.html.erb:17
+    app/views/posts/_form.html.erb:3
+    app/views/posts/new.html.erb:3
+    app/controllers/posts_controller.rb:38:in `new'
+
+Rendered rescues/_trace (53.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-08-07 23:33:55) [GET]
+Rendering template within layouts/home
+Rendering posts/new
+
+ActionView::TemplateError (undefined method `merge' for "content":String) on line #17 of app/views/posts/_form.html.erb:
+14:   <p>
+15:     <%= post_form.label :content %><br />
+16:     <%# post_form.text_area :content %>
+17:     <%= textile_editor post_form.text_area :content, 'content' -%>
+18:   </p>
+19:   <h2>Tags</h2>
+20:   <% post_form.fields_for :tags do |tag_form| %>
+
+    app/views/posts/_form.html.erb:17
+    app/views/posts/_form.html.erb:3
+    app/views/posts/new.html.erb:3
+    app/controllers/posts_controller.rb:38:in `new'
+
+Rendered rescues/_trace (51.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-08-07 23:34:05) [GET]
+Rendering template within layouts/home
+Rendering posts/new
+
+ActionView::TemplateError (undefined method `merge' for "content":String) on line #17 of app/views/posts/_form.html.erb:
+14:   <p>
+15:     <%= post_form.label :content %><br />
+16:     <%# post_form.text_area :content %>
+17:     <%= post_form.text_area :content, 'content' -%>
+18:   </p>
+19:   <h2>Tags</h2>
+20:   <% post_form.fields_for :tags do |tag_form| %>
+
+    app/views/posts/_form.html.erb:17
+    app/views/posts/_form.html.erb:3
+    app/views/posts/new.html.erb:3
+    app/controllers/posts_controller.rb:38:in `new'
+
+Rendered rescues/_trace (52.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-08-07 23:34:23) [GET]
+Rendering template within layouts/home
+Rendering posts/new
+Rendered posts/_form (13.2ms)
+Rendered home/_tabsheader (1.0ms)
+Rendered newspapers/_latest (0.1ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 109ms (View: 23, DB: 1) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (2.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:34:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:34:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:34:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-08-07 23:34:43) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"tags_attributes"=>{"0"=>{"name"=>"test"}}, "name"=>"Mark htest", "title"=>"testing", "content"=>"**wassup**\r\n\r\nh1.foobar baz"}, "authenticity_token"=>"AyX79bBl7V3wO+IGRPyuz/FL0jSFTEzjtCYAbu6mwIk="}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO "posts" ("name", "created_at", "title", "updated_at", "content") VALUES('Mark htest', '2010-08-08 06:34:43.202786', 'testing', '2010-08-08 06:34:43.202786', '**wassup**
+
+h1.foobar baz') RETURNING "id"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at", "post_id") VALUES('test', '2010-08-08 06:34:43.209583', '2010-08-08 06:34:43.209583', 9) RETURNING "id"[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:2009/posts/9
+Completed in 30ms (DB: 3) | 302 Found [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-08-07 23:34:43) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 9) [0m
+  [4;35;1mNewspaper Load Including Associations (1.4ms)[0m   [0mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering posts/show
+  [4;36;1mComment Load (0.6ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 9) [0m
+Rendered home/_tabsheader (1.1ms)
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+Rendered newspapers/_latest (11.0ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 50ms (View: 21, DB: 6) | 200 OK [http://localhost/posts/9]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:34:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:34:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:34:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2010-08-07 23:34:49) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 9) [0m
+  [4;36;1mNewspaper Load (0.5ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+  [4;35;1mNewspaper Load Including Associations (1.1ms)[0m   [0mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering posts/edit
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tags" WHERE ("tags".post_id = 9) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".post_id = 9) [0m
+
+ActionView::TemplateError (undefined method `_delete' for #<Tag:0x10352dc18>) on line #28 of app/views/posts/_form.html.erb:
+25:     <% unless tag_form.object.nil? || tag_form.object.new_record? %>
+26:       <p>
+27:         <%= tag_form.label :_delete, 'Remove:' %>
+28:         <%= tag_form.check_box :_delete %>
+29:       </p>
+30:     <% end %>
+31:   <% end %>
+
+    app/views/posts/_form.html.erb:28
+    app/views/posts/_form.html.erb:20
+    app/views/posts/_form.html.erb:3
+    app/views/posts/edit.html.erb:3
+
+Rendered rescues/_trace (127.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-08-07 23:34:55) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 9) [0m
+  [4;36;1mNewspaper Load Including Associations (1.3ms)[0m   [0;1mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering posts/show
+  [4;35;1mComment Load (0.6ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 9) [0m
+Rendered home/_tabsheader (1.1ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+Rendered newspapers/_latest (9.0ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 46ms (View: 20, DB: 4) | 200 OK [http://localhost/posts/9]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:34:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:34:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-08-07 23:34:56) [GET]
+Rendering template within layouts/home
+Rendering posts/new
+Rendered posts/_form (11.7ms)
+Rendered home/_tabsheader (1.0ms)
+Rendered newspapers/_latest (0.1ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 27ms (View: 17, DB: 0) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:34:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:34:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-08-07 23:35:01) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"tags_attributes"=>{"0"=>{"name"=>"test"}}, "name"=>"Mark htest", "title"=>"testing", "content"=>"**wassup**\r\n\r\nh1. foobar baz"}, "authenticity_token"=>"AyX79bBl7V3wO+IGRPyuz/FL0jSFTEzjtCYAbu6mwIk="}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO "posts" ("name", "created_at", "title", "updated_at", "content") VALUES('Mark htest', '2010-08-08 06:35:01.125431', 'testing', '2010-08-08 06:35:01.125431', '**wassup**
+
+h1. foobar baz') RETURNING "id"[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at", "post_id") VALUES('test', '2010-08-08 06:35:01.131677', '2010-08-08 06:35:01.131677', 10) RETURNING "id"[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:2009/posts/10
+Completed in 30ms (DB: 3) | 302 Found [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-08-07 23:35:01) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 10) [0m
+  [4;36;1mNewspaper Load Including Associations (1.4ms)[0m   [0;1mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering posts/show
+  [4;35;1mComment Load (0.6ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 10) [0m
+Rendered home/_tabsheader (1.1ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+Rendered newspapers/_latest (9.0ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 46ms (View: 20, DB: 5) | 200 OK [http://localhost/posts/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:35:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:35:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:35:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-08-07 23:42:05) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 10) [0m
+  [4;35;1mNewspaper Load Including Associations (1.4ms)[0m   [0mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering posts/show
+  [4;36;1mComment Load (0.6ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 10) [0m
+Rendered home/_tabsheader (1.2ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+Rendered newspapers/_latest (76.8ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 114ms (View: 87, DB: 5) | 200 OK [http://localhost/posts/10]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:42:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:42:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:42:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-08-07 23:42:08) [GET]
+Rendering template within layouts/home
+Rendering posts/new
+
+ActionView::TemplateError (undefined method `textile_editor' for #<ActionView::Helpers::FormBuilder:0x103a2d1a0>) on line #17 of app/views/posts/_form.html.erb:
+14:   <p>
+15:     <%= post_form.label :content %><br />
+16:     <%# post_form.text_area :content %>
+17:     <%= post_form.textile_editor :content -%>
+18:   </p>
+19:   <h2>Tags</h2>
+20:   <% post_form.fields_for :tags do |tag_form| %>
+
+    app/views/posts/_form.html.erb:17
+    app/views/posts/_form.html.erb:3
+    app/views/posts/new.html.erb:3
+    app/controllers/posts_controller.rb:38:in `new'
+
+Rendered rescues/_trace (50.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-08-07 23:42:43) [GET]
+Rendering template within layouts/home
+Rendering posts/new
+
+ActionView::TemplateError (undefined method `textile_editor' for #<ActionView::Helpers::FormBuilder:0x103a92730>) on line #17 of app/views/posts/_form.html.erb:
+14:   <p>
+15:     <%= post_form.label :content %><br />
+16:     <%# post_form.text_area :content %>
+17:     <%= post_form.textile_editor :content -%>
+18:   </p>
+19:   <h2>Tags</h2>
+20:   <% post_form.fields_for :tags do |tag_form| %>
+
+    app/views/posts/_form.html.erb:17
+    app/views/posts/_form.html.erb:3
+    app/views/posts/new.html.erb:3
+    app/controllers/posts_controller.rb:38:in `new'
+
+Rendered rescues/_trace (51.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-08-07 23:43:06) [GET]
+Rendering template within layouts/home
+Rendering posts/new
+Rendered posts/_form (12.5ms)
+Rendered home/_tabsheader (1.0ms)
+Rendered newspapers/_latest (0.1ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 106ms (View: 96, DB: 0) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:43:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:43:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:43:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2010-08-07 23:43:48) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 9) [0m
+  [4;36;1mNewspaper Load (0.6ms)[0m   [0;1mSELECT * FROM "newspapers" [0m
+  [4;35;1mNewspaper Load Including Associations (1.2ms)[0m   [0mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering posts/edit
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tags" WHERE ("tags".post_id = 9) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".post_id = 9) [0m
+Rendered posts/_form (15.9ms)
+Rendered home/_tabsheader (1.1ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+Rendered newspapers/_latest (8.2ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 128ms (View: 32, DB: 5) | 200 OK [http://localhost/posts/9/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:43:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:43:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#update (for 127.0.0.1 at 2010-08-07 23:44:08) [PUT]
+  Parameters: {"commit"=>"Save", "post"=>{"tags_attributes"=>{"0"=>{"name"=>"test", "id"=>"9"}}, "name"=>"Mark htest", "title"=>"testing", "content"=>"**wassup**\r\n\r\nh1.foobar baz\r\nh2.foobar blah"}, "authenticity_token"=>"AyX79bBl7V3wO+IGRPyuz/FL0jSFTEzjtCYAbu6mwIk=", "id"=>"9"}
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 9) [0m
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" IN ('9')) AND ("tags".post_id = 9) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Update (8.6ms)[0m   [0;1mUPDATE "posts" SET "updated_at" = '2010-08-08 06:44:08.337948', "content" = '**wassup**
+
+h1.foobar baz
+h2.foobar blah' WHERE "id" = 9[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:2009/posts/9
+Completed in 100ms (DB: 11) | 302 Found [http://localhost/posts/9]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-08-07 23:44:08) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 9) [0m
+  [4;36;1mNewspaper Load Including Associations (1.7ms)[0m   [0;1mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering posts/show
+  [4;35;1mComment Load (0.6ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 9) [0m
+Rendered home/_tabsheader (1.1ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+Rendered newspapers/_latest (9.1ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 48ms (View: 20, DB: 5) | 200 OK [http://localhost/posts/9]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:44:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:44:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:44:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2010-08-07 23:44:15) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 9) [0m
+  [4;35;1mNewspaper Load (0.5ms)[0m   [0mSELECT * FROM "newspapers" [0m
+  [4;36;1mNewspaper Load Including Associations (1.2ms)[0m   [0;1mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering posts/edit
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "tags" WHERE ("tags".post_id = 9) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".post_id = 9) [0m
+Rendered posts/_form (14.1ms)
+Rendered home/_tabsheader (1.0ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+Rendered newspapers/_latest (8.5ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 53ms (View: 27, DB: 5) | 200 OK [http://localhost/posts/9/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:44:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:44:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#update (for 127.0.0.1 at 2010-08-07 23:44:30) [PUT]
+  Parameters: {"commit"=>"Save", "post"=>{"tags_attributes"=>{"0"=>{"name"=>"test", "id"=>"9"}}, "name"=>"Mark htest", "title"=>"testing", "content"=>"**wassup**\r\n\r\nh1. foobar baz\r\nh2. foobar blah\r\n\r\n# asdf\r\n# qwervvjvj\r\n# qwerqwerqwer"}, "authenticity_token"=>"AyX79bBl7V3wO+IGRPyuz/FL0jSFTEzjtCYAbu6mwIk=", "id"=>"9"}
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 9) [0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" IN ('9')) AND ("tags".post_id = 9) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Update (0.4ms)[0m   [0mUPDATE "posts" SET "updated_at" = '2010-08-08 06:44:30.279977', "content" = '**wassup**
+
+h1. foobar baz
+h2. foobar blah
+
+# asdf
+# qwervvjvj
+# qwerqwerqwer' WHERE "id" = 9[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:2009/posts/9
+Completed in 23ms (DB: 3) | 302 Found [http://localhost/posts/9]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-08-07 23:44:30) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mPost Load (0.7ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 9) [0m
+  [4;35;1mNewspaper Load Including Associations (1.3ms)[0m   [0mSELECT "newspapers"."id" AS t0_r0, "newspapers"."name" AS t0_r1, "newspapers"."url" AS t0_r2, "newspapers"."created_at" AS t0_r3, "newspapers"."updated_at" AS t0_r4, "newspapers"."ranking" AS t0_r5, "articles"."id" AS t1_r0, "articles"."newspaper_id" AS t1_r1, "articles"."title" AS t1_r2, "articles"."url" AS t1_r3, "articles"."printed_date" AS t1_r4, "articles"."created_at" AS t1_r5, "articles"."updated_at" AS t1_r6, "articles"."content" AS t1_r7 FROM "newspapers" LEFT OUTER JOIN "articles" ON articles.newspaper_id = newspapers.id ORDER BY articles.printed_date DESC[0m
+Rendering template within layouts/home
+Rendering posts/show
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 9) [0m
+Rendered home/_tabsheader (1.1ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "articles" WHERE ("articles".newspaper_id = 8) [0m
+Rendered newspapers/_latest (8.5ms)
+Rendered home/_sponsors (0.1ms)
+Rendered home/_schedule_2009 (0.1ms)
+Rendered shared/_analytics (0.1ms)
+Completed in 48ms (View: 20, DB: 4) | 200 OK [http://localhost/posts/9]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:44:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/content_wrap_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:44:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-07 23:44:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/featurebox_bg.gif" with {:method=>:get, :canvas=>false}):
+  
+
+Rendering /Users/holtonma/git/markholton/vendor/plugins/facebooker/templates/layout.erb (200)
