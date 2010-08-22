@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   include AuthenticatedSystem
   
-  layout "home"
+  layout "application"
   
   def index
     @posts = Post.find(:all, :include => [:comments], :order => 'posts.updated_at DESC')

@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+  <title>Mark Holton | Web Application Development</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="robots" content="index, follow" />
+
+  <%= stylesheet_link_tag 'style' %>
+
+  <!--[if lt IE 7]>
+  <%= javascript_include_tag 'unitpngfix.js' %>
+  <%= stylesheet_link_tag 'ie6' %>
+  <![endif]--> 
+
+  <!--
+  <script type='text/javascript' src='jquery.js?ver=1.4.2'></script>
+  -->
+  <%= stylesheet_link_tag 'calendar' %>
+  <%= stylesheet_link_tag 'blue' %>
+  <%= stylesheet_link_tag 'custom' %>
+
+  <meta name="generator" content="Mark Holton" />
+  <meta name="generator" content="Ruby on Rails" />
+</head>
+
+<body>
+
+<div id="background">
+  <div id="page">
+    <div id="header">
+      <div id="logo">
+        <h1>
+          <a href="/"><%= image_tag("logo.png", :alt => "MarkHolton.com") %></a></h1>			
+			    <p id="description">Mark Holton's weblog 
+			      <a href="posts/?page_id=" title="Read more...">Read more &#187;</a>
+			    </p>
+		  </div> <!--/logo-->
+      <div id="menu">
+			  <div id="nav1">
+				  <ul>
+					  <li class="current_page_item">
+					    <%= link_to "<span>Home</span>", root_path() %>
+					  </li>
+					  <li class="page_item page-item-12">
+					    <%= link_to "<span>About</span>", about_path() %>
+					  </li>
+					  <li class="page_item page-item-24">
+					    <%= link_to "<span>Archives</span>", posts_path() %>
+					  </li>
+					  <li class="page_item page-item-27">
+					    <%= link_to "<span>Portfolio</span>", portfolios_path() %>
+					  </li>
+					</ul>
+				</div> <!--/nav1-->
+        </div>
+        <!--menu-->
+		    <!-- Featured portfolio item -->
+		    <!-- FIRST LOOP (start) Only show posts from category ("portfolio") -->
+        <div id="latest">
+          <!-- DISPLAYS THE IMAGE URL SPECIFIED IN THE CUSTOM FIELD -->
+          <div class="pic">
+            <a title="Vibrant CMS" href="/portfolios/1">
+              <%= image_tag("thumb_port.jpg", :alt=>"EyeOnMajors.com")%>
+            </a>       
+          </div>   	
+          <div class="demo">
+            <p class="fl">LATEST PROJECT: 
+              <a href="/portfolios/1">EyeOnMajors.com</a>
+            </p>
+            <p class="fr"><a href="http://www.woothemes.com/demo/vibrantcms/" class="btn-demo">VIEW</a></p>
+          </div><!--/demo-->
+        </div><!--/latest-->
+        <!-- FIRST LOOP (end) -->
+    </div> <!--/header -->      
+	  <div id="columns">
+		  <div id="centercol">
+			  <div class="wrap latest">
+				  <h2>LATEST BLOG ENTRY</h2>
+				  <div>
+				    <a href="http://www.woothemes.com/demo/freshfolio/feed/" class="rss">SUBSCRIBE</a>
+				  </div>
+			  </div>
+        <div class="box post">
+				  <div class="comment">
+				    <a    href="http://www.woothemes.com/demo/freshfolio/2008/07/09/the-way-to-a-successful-portfolio/#comments" title="Comment on The way to a successful portfolio">4</a>
+				  </div>
+				  <h3>
+				    <a href="http://www.woothemes.com/demo/freshfolio/2008/07/09/the-way-to-a-successful-portfolio/" rel="bookmark" 
+				    title="The way to a successful portfolio">User Adoption - Friction Factors</a>
+				  </h3>
+				  <div class="date">4 days ago</div>
+				  <div class="hl"></div>
+          <div class="entry">
+            <p>
+              Here are the items that lead to more signups, more users.
+
+              responsiveness/SPEED of site
+              no under construction, no broken links (like a broken window in neighborhood = bad sign)
+              ease of creating login/signup
+              includes various types: Facebook Connect, #Twitter OAuth, OpenID options
+              signup easy to find
+              low barrier to enter (FREE account type, 15 day trial, etc)
+            </p>
+            <p>
+              Ut non nunc ut ipsum facilisis egestas. Praesent eget velit. <a href="#">Aenean congue</a>, 
+              mauris vel vestibulum consequat, nisi magna rhoncus nunc, at malesuada mauris ante vel libero.
+              Integer ornare libero ac nisl. Integer ac mauris. Lorem ipsum dolor sit amet, 
+              consectetuer adipiscing elit. Sed nisl ante, mollis vitae, faucibus sed, venenatis eu, lectus.
+            </p>
+            <p>
+              In hac habitasse platea dictumst. Nulla faucibus odio sit amet turpis. Duis nibh. 
+              Nunc nisl sapien, semper at, lacinia id, dignissim in, libero. Aenean consequat nibh 
+              quis justo. Duis nec nulla. Duis nisi. Quisque tristique adipiscing nibh. Pellentesque est mi,
+              bibendum et, varius eu, sodales eu, tellus. Fusce facilisis, justo in pellentesque elementum,
+              mauris dolor ultricies purus, sit amet elementum augue orci a felis. Aenean augue purus,
+              hendrerit et, ultrices in, <a href="#">hendrerit eget</a>, ligula. Nam nec arcu eu ligula
+              condimentum semper. Aliquam vel nunc eget nisl auctor malesuada. Praesent sit amet erat 
+              aliquet nunc elementum consectetuer. Vestibulum ante ipsum primis in faucibus orci luctus
+              et ultrices posuere cubilia Curae; Mauris viverra consectetuer nisl. Aliquam volutpat 
+              metus sed ante. Suspendisse vitae tortor.
+            </p>
+          </div><!-- /entry -->    
+			</div><!--/box-->
+      <div class="wrap prev-entries">
+				<h2>PREVIOUS ENTRIES</h2>
+			</div>
+			<div class="headline">
+        <h3>
+          <a href="http://www.woothemes.com/demo/freshfolio/2008/06/22/testing-typography/" 
+             rel="bookmark" title="Permanent Link to Testing typography">Testing typography</a>
+        </h3>
+        <div class="comment">
+          <a href="http://www.woothemes.com/demo/freshfolio/2008/06/22/testing-typography/#comments" title="Comment on Testing typography">3</a>
+        </div>
+        <div class="date">June 22, 2008</div>
+      </div> <!--/ .headline -->
+      <div class="headline">
+        <h3>
+          <a href="http://www.woothemes.com/demo/freshfolio/2008/06/17/testing-normal-blog-posts/" rel="bookmark" title="Permanent Link to Testing Normal Blog Posts">Testing Normal Blog Posts</a>
+        </h3>
+        <div class="comment">
+          <a href="http://www.woothemes.com/demo/freshfolio/2008/06/17/testing-normal-blog-posts/#respond" title="Comment on Testing Normal Blog Posts">0</a>
+        </div>
+        <div class="date">June 17, 2008</div>
+      </div> <!--/ .headline -->
+      <div class="headline">
+        <h3>
+          <a href="http://www.woothemes.com/demo/freshfolio/2008/06/17/freelance-project-timing-management/" 
+             rel="bookmark" 
+             title="Permanent Link to Freelance Project Timing &amp; Management">
+             Freelance Project Timing &amp; Management
+          </a>
+        </h3>
+        <div class="comment">
+          <a href="http://www.woothemes.com/demo/freshfolio/2008/06/17/freelance-project-timing-management/#respond" 
+          title="Comment on Freelance Project Timing &amp; Management">0</a>
+        </div>
+        <div class="date">June 17, 2008</div>
+      </div>
+      <div class="headline">
+        <h3>
+          <a href="http://www.woothemes.com/demo/freshfolio/2008/06/17/new-iphone-announced/" 
+             rel="bookmark" title="Permanent Link to New iPhone Announced">New iPhone Announced</a>
+        </h3>
+        <div class="comment">
+          <a href="http://www.woothemes.com/demo/freshfolio/2008/06/17/new-iphone-announced/#respond" title="Comment on New iPhone Announced">0</a>
+        </div>
+        <div class="date">June 17, 2008</div>
+      </div>
+    	            
+	  <div class="ar"><a href="?page_id=">READ MORE IN THE ARCHIVES</a></div>    
+	</div> <!--/centercol -->
+	<div id="sidebar">
+    <div class="wrap st">
+      <h2>MY LATEST WORK</h2>
+    </div>
+    <div class="box">
+      <div class="pics">
+        <!-- DISPLAYS THE IMAGE URL SPECIFIED IN THE CUSTOM FIELD -->
+        <a title="Fresh News" href="http://www.woothemes.com/demo/freshfolio/2008/06/17/fresh-new/">
+          <img src="http://www.woothemes.com/demo/freshfolio/wp-content/themes/freshfolio/thumb.php?src=http://www.woothemes.com/demo/uploads/freshnews.jpg&amp;h=75&amp;w=75&amp;zc=1&amp;q=100" 
+          alt="Fresh News" />
+        </a>       
+        <!-- DISPLAYS THE IMAGE URL SPECIFIED IN THE CUSTOM FIELD -->       
+        <a title="Livewire" 
+           href="http://www.woothemes.com/demo/freshfolio/2008/06/17/livewire-2/">
+           <img   src="http://www.woothemes.com/demo/freshfolio/wp-content/themes/freshfolio/thumb.php?src=http://www.woothemes.com/demo/uploads/livewire-20.jpg&amp;h=75&amp;w=75&amp;zc=1&amp;q=100" 
+           alt="Livewire" />
+        </a>
+        <!-- DISPLAYS THE IMAGE URL SPECIFIED IN THE CUSTOM FIELD -->
+        <a title="Flash News" 
+           href="http://www.woothemes.com/demo/freshfolio/2008/05/17/flashnew/">
+           <img src="http://www.woothemes.com/demo/freshfolio/wp-content/themes/freshfolio/thumb.php?src=http://www.woothemes.com/demo/uploads/flashnews.jpg&amp;h=75&amp;w=75&amp;zc=1&amp;q=100" alt="Flash News" />
+         </a>
+      </div>
+		</div><!--/box-->        
+			
+    <div class="wrap st">
+      <h2>MY LATEST <span style="color:#0063DC">FLICK</span><span style="color:#FF0084">R</span> PHOTOS</h2>
+    </div>
+
+    <div class="box">
+        <div class="flickr">
+    		  <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=3&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=53234803%40N05">
+          </script>        
+        </div>
+        <div class="fix"></div>
+    </div> <!--/box-->
+
+    <div class="wrap twitter"><h2>Twitter Widget</h2></div>
+    <div id="twitter_div" class="box">
+      <ul id="twitter_update_list">
+        <li>
+          <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+          <script>
+          new TWTR.Widget({
+            version: 2,
+            type: 'profile',
+            rpp: 3,
+            interval: 6000,
+            width: 'auto',
+            height: 150,
+            theme: {
+              shell: {
+                background: '#ffffff',
+                color: '#333333'
+              },
+              tweets: {
+                background: '#ffffff',
+                color: '#444444',
+                links: '#a0de85'
+              }
+            },
+            features: {
+              scrollbar: false,
+              loop: false,
+              live: false,
+              hashtags: true,
+              timestamp: true,
+              avatars: false,
+              behavior: 'all'
+            }
+          }).render().setUser('MarkHolton').start();
+          </script>
+          
+        </li>
+      </ul>
+      <span class="website">
+        <a href="http://www.twitter.com/markholton" title="Follow me on Twitter">Follow me on Twitter</a>
+      </span>
+      </div>		
+			<div class="two-col">
+ 				<div class="widget"><h2>Categories</h2>		
+ 				  <ul>
+            <li class="cat-item cat-item-8"><a href="http://www.woothemes.com/demo/freshfolio/category/blog/apple/" title="View all posts filed under Apple">Apple</a>
+            </li>
+            <li class="cat-item cat-item-3"><a href="http://www.woothemes.com/demo/freshfolio/category/blog/" title="View all posts filed under Blog">Blog</a>
+            </li>
+            <li class="cat-item cat-item-4"><a href="http://www.woothemes.com/demo/freshfolio/category/blog/design/" title="View all posts filed under Design">Design</a>
+            </li>
+            <li class="cat-item cat-item-5"><a href="http://www.woothemes.com/demo/freshfolio/category/blog/freelancing/" title="View all posts filed under Freelancing">Freelancing</a>
+            </li>
+            <li class="cat-item cat-item-6 current-cat"><a href="http://www.woothemes.com/demo/freshfolio/category/portfolio/" title="View all posts filed under Portfolio">Portfolio</a>
+            </li>
+            <li class="cat-item cat-item-7"><a href="http://www.woothemes.com/demo/freshfolio/category/blog/ramblings/" title="View all posts filed under Ramblings">Ramblings</a>
+            </li>
+		      </ul>
+        </div>		                     
+      </div>
+			<div class="two-col">  
+				<div class="widget"><h2>Blogroll</h2>
+	        <ul class='xoxo blogroll'>
+            <li><a href="http://wordpress.org/development/">Development Blog</a></li>
+            <li><a href="http://codex.wordpress.org/">Documentation</a></li>
+            <li><a href="http://wordpress.org/extend/plugins/">Plugins</a></li>
+            <li><a href="http://wordpress.org/extend/ideas/">Suggest Ideas</a></li>
+            <li><a href="http://wordpress.org/support/">Support Forum</a></li>
+            <li><a href="http://wordpress.org/extend/themes/">Themes</a></li>
+            <li><a href="http://planet.wordpress.org/">WordPress Planet</a></li>
+          </ul>
+        </div>                 
+      </div>
+		</div>
+		<!--/sidebar -->
+		<div class="fix"></div>
+	</div> <!--/columns -->
+
+	<div id="footer">
+		<p class="fl">&copy; <%= Time.now.year %>. Powered by <a href="#">RedGrind, LLC</a>. 
+		  <a href="http://validator.w3.org/check?uri=http://www.markholton.com">
+		    <%= image_tag("ico-html.gif", :alt => "MarkHolton.com W3C validator") %>
+		  </a>
+		  <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.markholton.com">
+		    <%= image_tag("ico-css.gif", :alt => "MarkHolton.com CSS validator") %>
+		  </a>
+		</p>
+		<p class="fr">
+		  <a href="http://www.redgrind.com">RedGrind, LLC</a>
+		</p>
+	</div>
+	<!--/footer -->
+	</div>
+<!--/page -->
+
+</div><!-- /#background -->
+
+</body>
+</html>

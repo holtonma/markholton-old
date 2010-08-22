@@ -1,0 +1,11 @@
+#sidebar{
+	padding-left:25px;
+}
+.box .pic img{
+	margin-right:0px;
+}
+#columns ol.commentlist .comment-text{
+  height:auto !important;
+  height:120px;
+}
+

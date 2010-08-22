@@ -10,6 +10,11 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :posts, :has_many => :comments
   map.resources :newspapers, :has_many => :articles
   
+  map.resources :portfolios
+  
+  map.test '/test', :controller => 'test', :action => 'index'
+  map.about '/about', :controller=> 'about', :action => 'index'
+  
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.login  '/login',  :controller => 'sessions', :action => 'new'
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
