@@ -1,0 +1,71 @@
+<div id="sidebar">
+  
+  <div class="wrap st">
+    <h2>MY LATEST WORK</h2>
+  </div>
+  <div class="box">
+    <%= render :partial => 'latest_work' %>
+	</div><!--/box-->        
+		
+  <div class="wrap st">
+    <h2>MY LATEST <span style="color:#0063DC">FLICK</span><span style="color:#FF0084">R</span> PHOTOS</h2>
+  </div>
+  <div class="box">
+    <%= render :partial => 'flickr' %>
+  </div> <!--/box-->
+
+  <div class="wrap twitter"><h2>Twitter me this</h2></div>
+  <%= render :partial => 'twitter' %>
+  		
+		<div class="two-col">
+			<div class="widget"><h2>Categories</h2>		
+			  <ul>
+          <li class="cat-item cat-item-1">
+            <a href="http://www.woothemes.com/demo/freshfolio/category/blog/apple/" 
+               title="View all posts filed under Rails">Rails</a>
+          </li>
+          <li class="cat-item cat-item-2">
+            <a href="http://www.woothemes.com/demo/freshfolio/category/blog/" 
+               title="View all posts filed under Blog">Blog</a>
+          </li>
+          <li class="cat-item cat-item-3">
+            <a href="http://www.woothemes.com/demo/freshfolio/category/blog/design/" 
+               title="View all posts filed under Javascript">Javascript</a>
+          </li>
+          <li class="cat-item cat-item-4">
+            <a href="http://www.woothemes.com/demo/freshfolio/category/blog/freelancing/" 
+               title="View all posts filed under Heroku">Heroku</a>
+          </li>
+          <li class="cat-item cat-item-5">
+            <a href="http://www.woothemes.com/demo/freshfolio/category/blog/freelancing/" 
+               title="View all posts filed under PostgreSQL">PostgreSQL</a>
+          </li>
+          <li class="cat-item cat-item-6 current-cat">
+            <a href="http://www.woothemes.com/demo/freshfolio/category/portfolio/" 
+               title="View all posts filed under Portfolio">Portfolio</a>
+          </li>
+          <li class="cat-item cat-item-7">
+            <a href="http://www.woothemes.com/demo/freshfolio/category/blog/ramblings/" 
+               title="View all posts filed under Entrepreneur">Entrepreneur</a>
+          </li>
+          <li class="cat-item cat-item-8">
+            <a href="http://www.woothemes.com/demo/freshfolio/category/blog/ramblings/" 
+               title="View all posts filed under HTML5">HTML5</a>
+          </li>
+	      </ul>
+      </div>		                     
+    </div>
+		<div class="two-col">  
+			<div class="widget"><h2>Blogroll</h2>
+        <ul class='xoxo blogroll'>
+          <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
+          <li><a href="http://rubyinside.com">Ruby Inside</a></li>
+          <li><a href="http://blog.heroku.com/">Heroku Blog</a></li>
+          <li><a href="http://www.infoq.com/ruby/">InfoQ (Ruby)</a></li>
+          <li><a href="http://wordpress.org/extend/ideas/">Ajaxian</a></li>
+          <li><a href="http://www.mongodb.org/">MongoDB</a></li>
+        </ul>
+      </div>                 
+    </div>
+	</div>
+	<!--/sidebar -->

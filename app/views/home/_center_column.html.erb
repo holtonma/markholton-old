@@ -1,0 +1,47 @@
+<div id="centercol">
+  <div class="wrap latest">
+	  <h2>LATEST BLOG ENTRY</h2>
+	  <div>
+	    <a href="http://www.markholton.com/posts.atom" class="rss">SUBSCRIBE</a>
+	  </div>
+  </div>
+  
+  <div class="box post">
+	  <div class="comment">
+	    <a href="/posts/<%= @posts.first.id %>" title="Comment on this post">
+	      <%= @posts.first.comments.length %>
+	    </a>
+	  </div>
+	  <h3>
+	    <a href="/posts/<%= @posts.first.id %>" rel="bookmark" 
+	    title="<%= @posts.first.title %>"><%= @posts.first.title %></a>
+	  </h3>
+	  <div class="date">
+	    <%= distance_of_time_in_words(@posts.first.created_at, Time.now) %> ago
+	  </div>
+	  <div class="hl"></div>
+    <div class="entry">
+      <%= @posts.first.content %>
+    </div><!-- /entry -->  
+  </div><!--/box-->
+  
+<div class="wrap prev-entries">
+	<h2>PREVIOUS ENTRIES</h2>
+</div>
+<% i = 0 %>
+<% @posts.each do |post| %>
+  <% if i > 0 %>
+    <div class="headline">
+      <h3><a href="/posts/<%= post.id %>" rel="bookmark" title="<%= post.title %>"><%= post.title %></a></h3>
+      <div class="comment">
+        <a href="/posts/<%= post.id %>" title="<%= post.title %>"><%= post.comments.length %></a>
+      </div>
+      <div class="date"><%= distance_of_time_in_words(post.created_at, Time.now) %> ago</div>
+    </div> <!--/ .headline -->
+  <% end %>
+  <% i += 1%>
+<% end %>
+
+            
+<div class="ar"><a href="?page_id=">READ MORE IN THE ARCHIVES</a></div>    
+</div> <!--/centercol -->
