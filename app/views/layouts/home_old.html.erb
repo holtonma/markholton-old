@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <!-- <meta name="google-site-verification" content="mLSiiegGsMcM15ubexd5bT_m0S8_p2YgUQ5DEZ-hcbI" /> -->
+  <title>Mark Holton : web application development</title>
+  <%= javascript_include_tag :defaults%>
+  <%= stylesheet_link_tag 'main2' %>
+  <!--[if lte IE 6]>
+  <%= stylesheet_link_tag 'ie6_or_less.css' %>
+  <![endif]--> 
+</head>
+
+<body id="type-c">
+<%# fb_connect_javascript_tag %>
+<%# init_fb_connect "XFBML"%>
+<div id="wrap">
+  <%= render :partial => "home/tabsheader" %>
+	
+	<div id="content-wrap">
+		<div id="utility"><%= render :partial => "newspapers/latest" %></div>
+      
+		<div id="content">
+		  <p style="color: green"><%= flash[:notice] %></p>
+		  
+  	  <%= yield %>
+      
+			<div id="footer">
+			  <p>I am a software engineer from Seattle, WA. A lot of my work is inside the firewall at corporations in the Fortune 100.  But I also experiment with Ruby, Rails, Memcache, PostgreSQL, Cassandra, iPhone web development and other technologies at sites like EyeOnMajors.com</p>
+
+        <p>
+          You can follow me at Facebook, and Twitter (@MarkHolton) or just email me at holtonma (at) gmail.com. 
+			    Copyright &copy; <%= Time.now.year %> MarkHolton.com, All rights reserved
+			  </p>
+			</div>
+		</div> <!-- end content-->
+		
+		<div id="sidebar">
+			<!-- <div class="featurebox"><%# render :partial => "users/user_info" %></div> -->
+      <div class="featurebox"><%= render :partial => "home/sponsors" %></div>
+			<div class="featurebox"><%= render :partial => "home/schedule_2009" %></div>
+		</div>
+		
+    <div id="poweredby">
+      <a href="http://www.MarkHolton.com/"><%= image_tag("optimist.png", :alt => "MarkHolton.com") %></a>
+    </div>
+	</div> <!-- end content-wrap -->
+</div> <!-- end wrap -->
+
+<%= render :partial => "shared/analytics" %>
+</body>
+
+</html>
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+  <title>Mark Holton | Web Application Development</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="robots" content="index, follow" />
+
+  <%= stylesheet_link_tag 'style' %>
+  <!--[if lt IE 7]>
+  <%= javascript_include_tag 'unitpngfix.js' %>
+  <%= stylesheet_link_tag 'ie6' %>
+  <![endif]--> 
+  <!--
+  <script type='text/javascript' src='jquery.js?ver=1.4.2'></script>
+  -->
+  <%= stylesheet_link_tag 'calendar' %>
+  <%= stylesheet_link_tag 'blue' %>
+  <%= stylesheet_link_tag 'custom' %>
+
+  <meta name="generator" content="Mark Holton" />
+  <meta name="generator" content="Ruby on Rails" />
+</head>
+
+<body>
+  <div id="background">
+    <div id="page">
+      <div id="header">
+        <div id="logo">
+          <h1>
+            <a href="/"><%= image_tag("logo.png", :alt => "MarkHolton.com") %></a></h1>			
+  			    <p id="description">
+  			      <p>
+  			        Hi, I'm <strong>Mark Holton</strong>
+  			        -- a security savvy REST, Ruby, JavaScript, Rails, and Ajax practitioner. 
+  			        I am in the process of earning an M.S. in Computer, Network, and Information Security.  
+  			        <p class="quote"><i>"Focus on the core things that do not change"</i></p>
+  			      </p>
+  			      <a href="posts/?page_id=" title="Read more...">Read more &#187;</a>
+  			    </p>
+  		  </div> <!--/logo-->
+		  
+  		  <%# yield %>
+		  
+  		  <%= render :partial => "menu", :locals => { :active => "about" } %>
+        <%= render :partial => "featured_portfolio" %>
+      </div> <!--/header -->    
+      
+  	  <%= render :partial => "center_column" %>
+	    
+  		<div class="fix"></div>
+  	  
+    
+      <%= render :partial => "footer" %>
+    
+  	</div><!--/page -->
+  </div><!-- /#background -->
+</body>
+</html>

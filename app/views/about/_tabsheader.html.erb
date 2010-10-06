@@ -1,0 +1,28 @@
+<div id="header">
+	<div id="site-name">Mark Holton</div>
+	<div id="search">
+		<% form_tag({:controller => 'articles', :action => 'index'}, :method => 'get') do |f| %>
+		  <span>
+		  <!-- <label for="searchsite">Site Search:</label> -->
+		  <%= label_tag "searchsite", "Articles Search:" %>
+  		<!-- <input id="searchsite" name="searchsite" type="text" /> -->
+  		<%= text_field_tag :q, h(params[:q]) %>
+  		<!-- <input type="submit" value="Go" class="f-submit" /> -->
+  		<%= submit_tag 'Go', :class => "f-submit", :name => nil %>
+  		</span>
+    <% end %>
+	</div>
+	
+	<ul id="nav">
+  	<li class="first active"><a href="#">Blog</a></li>
+  	<li><%= link_to 'Interesting Software News', articles_path %></a>
+  	  <ul>
+  		  <li class="first"><a href="/articles?q=Rails">Rails</a></li>
+  		  <li><a href="/articles?q=Javascript">Javascript</a></li>
+  		  <li><a href="/articles?q=Cassandra">Cassandra</a></li>
+        <li><a href="/articles?q=Heroku">Heroku</a></li>
+        <li><a href="/articles?q=Nokogiri">Nokogiri</a></li>
+  		</ul>
+  	</li>
+	</ul>
+</div>
