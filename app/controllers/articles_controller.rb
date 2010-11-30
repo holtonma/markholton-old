@@ -6,7 +6,7 @@ class ArticlesController < ApplicationController
   def index
     
     if params[:q] == "" || params[:q] == nil
-      @articles = Article.find(:all, :include => [:newspaper], :order => "printed_date DESC")
+      @articles = Article.all(:include => [:newspaper], :order => "printed_date DESC")
       @is_search = false
     else
       q = params[:q]
@@ -37,8 +37,8 @@ class ArticlesController < ApplicationController
   # GET /articles/new.xml
   def new
     @article = Article.new
-    @newspapers = Newspaper.find(:all)
-    
+    @newspapers = Newspaper.all
+        
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @article }
@@ -48,8 +48,8 @@ class ArticlesController < ApplicationController
   # GET /articles/1/edit
   def edit
     @article = Article.find(params[:id])
-    @newspapers = Newspaper.find(:all)
-    @news = Newspaper.find(:all, :include => [:articles], :order => "articles.printed_date DESC")
+    @newspapers = Newspaper.all
+    @news = Newspaper.all(:include => [:articles], :order => "articles.printed_date DESC")
     
   end
 

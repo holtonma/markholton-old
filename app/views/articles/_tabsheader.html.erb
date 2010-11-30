@@ -1,7 +1,7 @@
 <div id="header">
 	<div id="site-name">Mark Holton</div>
 	<div id="search">
-		<% form_tag({:action => 'index'}, :method => 'get') do |f| %>
+		<%= form_tag({:action => 'index'}, :method => 'get') do |f| %>
 		  <!-- <label for="searchsite">Site Search:</label> -->
 		  <%= label_tag "searchsite", "Articles Search:" %>
   		<!-- <input id="searchsite" name="searchsite" type="text" /> -->
