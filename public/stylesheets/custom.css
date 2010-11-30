@@ -10,3 +10,106 @@ style from style.css to this file, and modify it to
 your liking.
 
 */
+
+
+.hresume {
+  /*margin: auto;*/
+}
+
+#footer {
+  text-align: center;
+  font-size: .75em;
+  color: #333;
+}
+/* ...big blocks */
+
+/* nav... */
+#nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: .9em;
+}
+
+#nav li {
+  margin: 0 .5em;
+  padding: 0;
+  display: inline;
+}
+/* ....nav */
+
+/* awesome ampersand... */
+abbr.amp {
+  font-family: Baskerville, Palatino, "Book Antiqua", serif;
+  font-style: italic;
+  font-weight: normal;
+}
+/* ...awesome ampersand */
+
+
+/* hcard... */
+#me {
+  text-align: left;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 6em;
+}
+
+h1 a {
+  border: none;
+}
+
+h2 {
+  margin: .25em 0;
+  padding: 0;
+  font-size: 1.5em;
+}
+
+.adr {
+  display: block;
+}
+
+.download {
+  border: none !important;
+  background: none !important;
+}
+/* ...hcard */
+
+/* hresume... */
+h3 {
+  font-size: 2em;
+}
+
+.vevent {
+  margin: 1em 0 0 0;
+}
+
+.org,
+.title,
+dt {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+dd {
+  display: inline;
+  margin: 0 0 0 .5em;
+  padding: 0;
+}
+
+.org:after {
+	content: " :";
+}
+
+.date_duration {
+  color: #333;
+  font-size: .9em;
+}
+
+.contact {
+  display: none;
+}
+/* ...hresume */
