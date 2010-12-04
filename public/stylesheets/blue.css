@@ -15,7 +15,7 @@ input,select,textarea{ border: #999999 1px solid; }
 #latest .pic img{ border: 5px solid #2b3846; }
 #latest .pic img:hover { border: 5px solid #2b3846; }
 #latest .demo a{ color: #e6e6e6; }
-#nav1 li a{	color: #d8d8d8; }
+#nav1 li a{	color: #d8d8d8; margin:0 8px; padding:3px 5px;}
 #nav1 li.current_page_item a span{ color: #ffffff; }
 #nav1 li a:hover{ color: #ffffff; }
 #sidebar{ border-left:1px solid #e6e6e6; }
@@ -50,7 +50,14 @@ input, select, textarea { border:1px solid #e6e6e6; }
 .entry img { background:#F8F8F4; border: solid 1px #e6e6e6;	}
 .hl{ background: url(/images/hl-dot.gif) repeat-x top; }
 .box .hl{ border-top: 1px solid #e6e6e6; }
-#nav1 li.current_page_item a{ background: url(/images/tab-hover.gif) no-repeat left; }
-#nav1 li.current_page_item a span{ background: url(/images/tab-hover.gif) no-repeat right; color: #ffffff; }
-#nav1 li a:hover{ background: url(/images/tab-hover.gif) no-repeat left; color: #ffffff; }
-#nav1 li a:hover span{ background: url(/images/tab-hover.gif) no-repeat right; }
+#nav1 li.current_page_item a{ background: #2B3846; }
+#nav1 li.current_page_item a span{ background: #2B3846; color: #ffffff; }
+#nav1 li a:hover{ 
+	background: #2B3846; 
+	color: #ffffff; 
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	
+}
+#nav1 li a:hover span{ background: #2B3846; }

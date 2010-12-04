@@ -1,5 +1,4 @@
 class PostsController < ApplicationController
-  include AuthenticatedSystem
   
   layout "home"
   
@@ -10,7 +9,7 @@ class PostsController < ApplicationController
   # GET /posts.xml
   def index
     @posts = Post.all(:order => 'updated_at DESC')
-    @news = Newspaper.find(:all, :include => [:articles], :order => "articles.printed_date DESC")
+    @news = Newspaper.all(:include => [:articles], :order => "articles.printed_date DESC")
     
     respond_to do |format|
       format.html # index.html.erb
@@ -22,7 +21,7 @@ class PostsController < ApplicationController
   # GET /posts/1.xml
   def show
     @user = current_user 
-    @news = Newspaper.find(:all, :include => [:articles], :order => "articles.printed_date DESC")
+    @news = Newspaper.all(:include => [:articles], :order => "articles.printed_date DESC")
     
     respond_to do |format|
       format.html # show.html.erb
@@ -43,8 +42,8 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
-    @newspapers = Newspaper.find(:all)
-    @news = Newspaper.find(:all, :include => [:articles], :order => "articles.printed_date DESC")
+    @newspapers = Newspaper.all
+    @news = Newspaper.all(:include => [:articles], :order => "articles.printed_date DESC")
   end
 
   # POST /posts
