@@ -6,7 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
 
-module Markholton
+module MarkholtonRails3
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -14,19 +14,11 @@ module Markholton
 
     # Custom directories with classes and modules you want to be autoloadable.
     # config.autoload_paths += %W(#{config.root}/extras)
-    config.autoload_paths += %W(#{config.root}/lib)
-    config.autoload_paths += Dir["#{config.root}/lib/**/"]
-    
+
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.
     # config.plugins = [ :exception_notification, :ssl_requirement, :all ]
-    
-    # Configure generators values. Many other options are available, be sure to check the documentation.
-    # need to make sure :active_record is the default used as using Mongoid in this app  
-    config.generators do |g|  
-      g.orm :active_record
-    end
-        
+
     # Activate observers that should always be running.
     # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
 
@@ -46,8 +38,5 @@ module Markholton
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
-    
-    config.secret_token = 'f2c9fe444241fb163ff9ce5d9c424a8ef937ad67140810eb5b838545b3dc3f5c4a1f504dea239872d0f62b70bb920de91cdeac785c0b12dc5ab753c27c399819'
-    
   end
 end

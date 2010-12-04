@@ -1,6 +1,6 @@
 /* MarkHolton.com */
  
-/*=== Setup ===*/
+/* Setup */
 *{
 	border: 0;
 	margin: 0;
@@ -117,7 +117,7 @@ li{
 	line-height:18px;
 }
 #latest a.btn-demo{
-	background: url(images/btn-demo.png) no-repeat;
+	/*background: url(images/btn-demo.png) no-repeat;*/
 	font-weight:bold;
 	display: block;
 	text-align: center;
@@ -146,34 +146,40 @@ li{
 	float: left;
 	line-height: 27px;
 	margin: 0 2px 0 0;
+	border:0px dashed orange;
 }
 #nav1 li a{
 	color: #d8d8d8;
 	display: block;
 	float: left;
-	padding: 0 0 0 15px;
-	font-weight:bold;
+	padding: 0;
+	font-weight: bold;
+	border: 0px solid red;
 }
 #nav1 li a span{
 	display: block;
 	float: left;
 	height: 27px;
-	padding: 0 13px 0 0;
+	padding: 3px 3px;
 }
 #nav1 li.current_page_item a{
-	background: url(images/tab-hover.gif) no-repeat left;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border:0px solid green;
+	background: #2B3846;
 }
 #nav1 li.current_page_item a span{
-	background: url(images/tab-hover.gif) no-repeat right;
 	color: #ffffff;
+	padding:3px;
 }
 #nav1 li a:hover{
-	background: url(images/tab-hover.gif) no-repeat left;
-	color: #ffffff;
+	color: red;
+	background: #2B3846;
 	text-decoration: none;
 }
 #nav1 li a:hover span{
-	background: url(images/tab-hover.gif) no-repeat right;
+	/*background: url(images/tab-hover.gif) no-repeat right;*/
 }
 
 /*=== All Columns ===*/

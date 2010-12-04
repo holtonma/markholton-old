@@ -1,4 +1,4 @@
-Markholton::Application.routes.draw do |map|
+MarkholtonRails3::Application.routes.draw do |map|
   # map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   #   map.login '/login', :controller => 'sessions', :action => 'new'
   #   map.register '/register', :controller => 'users', :action => 'create'
@@ -13,13 +13,14 @@ Markholton::Application.routes.draw do |map|
   
   #get 'home/index' #, :controller => 'home', :action => 'index'
   #get '/test', :controller => 'test', :action => 'index'
-  #get 'about/index' #, :controller=> 'about', :action => 'index'
+  get 'about/index', :controller=> 'about', :action => 'index'
+  #map.resource :about
   
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.login  '/login',  :controller => 'sessions', :action => 'new'
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   #   
-  map.root :home
+  #map.root :home
   
   #devise_for :users
   
@@ -65,7 +66,7 @@ Markholton::Application.routes.draw do |map|
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  #root :to => "home#index"
+  root :to => "home#index"
 
   # See how all your routes lay out with "rake routes"
 

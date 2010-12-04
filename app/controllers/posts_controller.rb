@@ -1,5 +1,4 @@
 class PostsController < ApplicationController
-  include AuthenticatedSystem
   
   layout "home"
   

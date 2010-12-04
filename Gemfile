@@ -16,6 +16,7 @@ gem "mongoid", '2.0.0.beta.19'
 gem 'bson_ext'  #C extension for handling json
 gem "cancan"
 gem "texticle"
+gem "RedCloth", ">=4.0", :require => 'redcloth'  
 
 # To use debugger (not working for ruby 1.9.* yet)
 #gem 'ruby-debug'

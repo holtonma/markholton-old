@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-  include AuthenticatedSystem
   
   layout "application"
   
