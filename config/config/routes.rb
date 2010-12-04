@@ -19,7 +19,7 @@ Markholton::Application.routes.draw do |map|
   map.login  '/login',  :controller => 'sessions', :action => 'new'
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   #   
-  map.root :home
+  #map.root :home
   
   #devise_for :users
   
